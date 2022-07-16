@@ -17,6 +17,25 @@ struct SplashScreenView: View {
         
         if isActive {
             
+            /*VStack {
+                
+                if UIScreen.main.bounds.height < 750 {
+                    
+                    ScrollView(.vertical, showsIndicators: false) {
+                        
+                        SignInView()
+                        
+                    }
+                    
+                } else {
+                    
+                    SignInView()
+                    
+                }
+                
+            }
+            .padding(.vertical)*/
+            
             SignInView()
             
         } else {

@@ -16,6 +16,9 @@
 		1FE238E52882C4DA00D91B1E /* KiraciUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238E42882C4DA00D91B1E /* KiraciUITestsLaunchTests.swift */; };
 		1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238F82882CCCC00D91B1E /* SignInView.swift */; };
 		1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239002882E8B800D91B1E /* SplashScreenView.swift */; };
+		1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390228835F3C00D91B1E /* SignUpView.swift */; };
+		1FE239052883636200D91B1E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239042883636200D91B1E /* HomeView.swift */; };
+		1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		1FE238F12882C4F800D91B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1FE238F82882CCCC00D91B1E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1FE239002882E8B800D91B1E /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		1FE2390228835F3C00D91B1E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1FE239042883636200D91B1E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,9 @@
 			children = (
 				1FE238F82882CCCC00D91B1E /* SignInView.swift */,
 				1FE239002882E8B800D91B1E /* SplashScreenView.swift */,
+				1FE2390228835F3C00D91B1E /* SignUpView.swift */,
+				1FE239042883636200D91B1E /* HomeView.swift */,
+				1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,7 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */,
+				1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */,
 				1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */,
+				1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */,
+				1FE239052883636200D91B1E /* HomeView.swift in Sources */,
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
 			);
