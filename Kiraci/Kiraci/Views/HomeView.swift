@@ -9,19 +9,20 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var headerName: String = "Renter"
+    @State var count = 0
+    
     var body: some View {
         
         NavigationView {
             
-            VStack(spacing: 25) {
-                
-                
-                
-            }
+            TabNavigationView(headerName: $headerName)
+            
         }
         .font(.title)
         .padding(.top, 25)
-        .navigationTitle("Ana sayfa")
+        .background(Color.renterText)
+        .navigationTitle(headerName)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             
@@ -36,16 +37,33 @@ struct HomeView: View {
             
             ToolbarItem(placement: .navigationBarTrailing) {
                 
-                Button(action: {}) {
-                    Image(systemName: "bell")
-                        .padding(.horizontal)
+                ZStack {
                     
+                    Button(action: {
+                        
+                        self.count += 1
+                        
+                    }) {
+                        Image(systemName: "bell.fill")
+                            .padding(.horizontal)
+                        
+                    }
+                    
+                    if count != 0 {
+                        
+                        Text("\(count)")
+                            .padding(4)
+                            .background(Color.black)
+                            .clipShape(Circle())
+                            .foregroundColor(.white)
+                            .offset(x: 18, y: -8)
+                        
+                    }
                 }
-                
+                .animation(.spring())
             }
         }
-        .tint(Color("RenterText"))
+        .tint(Color.white)
         .navigationBarBackButtonHidden(true)
-        
     }
 }

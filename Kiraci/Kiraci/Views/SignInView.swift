@@ -11,7 +11,7 @@ struct SignInView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
-    @State private var showHomeView = false
+    @State private var showTabNavigationView = false
     @State private var showForgetPasswordView = false
     
     var screenSize = UIScreen.main.bounds
@@ -93,11 +93,11 @@ struct SignInView: View {
                             
                         }
                         
-                        NavigationLink(destination: HomeView(), isActive: $showHomeView) {
+                        NavigationLink(destination: HomeView(), isActive: $showTabNavigationView) {
                             
                             Button(action: {
                                 
-                                showHomeView.toggle()
+                                showTabNavigationView.toggle()
                                 
                             }) {
                                 
@@ -116,11 +116,11 @@ struct SignInView: View {
                         
                         VStack(spacing: 10) {
                             
-                            NavigationLink(destination: HomeView(), isActive: $showHomeView) {
+                            NavigationLink(destination: HomeView(), isActive: $showTabNavigationView) {
                                 
                                 Button(action: {
                                     
-                                    showHomeView.toggle()
+                                    showTabNavigationView.toggle()
                                     
                                 }) {
                                     
@@ -144,11 +144,11 @@ struct SignInView: View {
                                 
                             }
                             
-                            NavigationLink(destination: HomeView(), isActive: $showHomeView) {
+                            NavigationLink(destination: HomeView(), isActive: $showTabNavigationView) {
                                 
                                 Button(action: {
                                     
-                                    showHomeView.toggle()
+                                    showTabNavigationView.toggle()
                                     
                                 }) {
                                     
