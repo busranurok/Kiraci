@@ -19,6 +19,8 @@
 		1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390228835F3C00D91B1E /* SignUpView.swift */; };
 		1FE239052883636200D91B1E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239042883636200D91B1E /* HomeView.swift */; };
 		1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */; };
+		1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE23909288452B000D91B1E /* ColorExtensions.swift */; };
+		1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1FE2390228835F3C00D91B1E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1FE239042883636200D91B1E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		1FE23909288452B000D91B1E /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSignUpShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		1FE238C62882C4D900D91B1E /* Kiraci */ = {
 			isa = PBXGroup;
 			children = (
+				1FE239082884528B00D91B1E /* Resources */,
 				1FE238F52882C68D00D91B1E /* Models */,
 				1FE238F42882C68500D91B1E /* ViewModels */,
 				1FE238F32882C67F00D91B1E /* Views */,
@@ -153,6 +158,7 @@
 		1FE238F32882C67F00D91B1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FE2390B288455F300D91B1E /* CustomViews */,
 				1FE238F82882CCCC00D91B1E /* SignInView.swift */,
 				1FE239002882E8B800D91B1E /* SplashScreenView.swift */,
 				1FE2390228835F3C00D91B1E /* SignUpView.swift */,
@@ -174,6 +180,22 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1FE239082884528B00D91B1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FE23909288452B000D91B1E /* ColorExtensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FE2390B288455F300D91B1E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +332,11 @@
 				1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */,
 				1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */,
 				1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */,
+				1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */,
 				1FE239052883636200D91B1E /* HomeView.swift in Sources */,
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
+				1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
