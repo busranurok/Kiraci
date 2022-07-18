@@ -10,5 +10,6 @@ import SwiftUI
 extension Color {
     
     static let renterText = Color("RenterText")
+    static let cardViewBackground = Color("CardViewBackground")
     
 }

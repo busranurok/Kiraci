@@ -54,6 +54,7 @@ struct TabNavigationView: View {
             }
             
         }
+        .navigationBarHidden(true)
         
     }
     

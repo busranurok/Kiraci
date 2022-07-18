@@ -24,6 +24,7 @@
 		1FE2391128848DB700D91B1E /* TabNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391028848DB700D91B1E /* TabNavigationView.swift */; };
 		1FE2391328848E4900D91B1E /* RenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391228848E4900D91B1E /* RenterView.swift */; };
 		1FE2391528848F1200D91B1E /* BuildingOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391428848F1200D91B1E /* BuildingOwnerView.swift */; };
+		1FE2391A2884D9CC00D91B1E /* CloredGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		1FE2391028848DB700D91B1E /* TabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationView.swift; sourceTree = "<group>"; };
 		1FE2391228848E4900D91B1E /* RenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterView.swift; sourceTree = "<group>"; };
 		1FE2391428848F1200D91B1E /* BuildingOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingOwnerView.swift; sourceTree = "<group>"; };
+		1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloredGroupBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		1FE238C62882C4D900D91B1E /* Kiraci */ = {
 			isa = PBXGroup;
 			children = (
+				1FE239162884CC1C00D91B1E /* Style */,
 				1FE239082884528B00D91B1E /* Resources */,
 				1FE238F52882C68D00D91B1E /* Models */,
 				1FE238F42882C68500D91B1E /* ViewModels */,
@@ -205,6 +208,14 @@
 				1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1FE239162884CC1C00D91B1E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
 				1FE2391528848F1200D91B1E /* BuildingOwnerView.swift in Sources */,
+				1FE2391A2884D9CC00D91B1E /* CloredGroupBox.swift in Sources */,
 				1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
