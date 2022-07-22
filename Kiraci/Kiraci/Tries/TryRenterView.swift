@@ -5,9 +5,9 @@
 //  Created by BusranurOK on 17.07.2022.
 //
 
-import SwiftUI
+/*import SwiftUI
 
-struct RenterView: View {
+struct TryRenterView: View {
     
     @Binding var headerName: String
     
@@ -78,4 +78,4 @@ struct RenterView: View {
         .padding(.top, -80)
         
     }
-}
+}*/

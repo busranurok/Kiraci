@@ -5,7 +5,7 @@
 //  Created by BusranurOK on 17.07.2022.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 struct TabNavigationView: View {
     
@@ -58,4 +58,4 @@ struct TabNavigationView: View {
         
     }
     
-}
+}*/

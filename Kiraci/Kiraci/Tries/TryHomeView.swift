@@ -5,9 +5,9 @@
 //  Created by BusranurOK on 17.07.2022.
 //
 
-import SwiftUI
+/*import SwiftUI
 
-struct HomeView: View {
+struct TryHomeView: View {
     
     @State var headerName: String = "Renter"
     @State var count = 0
@@ -68,3 +68,4 @@ struct HomeView: View {
         
     }
 }
+*/

@@ -9,6 +9,9 @@ import Foundation
 import SwiftUI
 
 struct ColoredGroupBox: GroupBoxStyle {
+    
+    @State var customBackgroundColor: Color
+    
     func makeBody(configuration: Configuration) -> some View {
         VStack {
             HStack {
@@ -21,6 +24,7 @@ struct ColoredGroupBox: GroupBoxStyle {
         }
         .padding()
         .background(RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(Color.cardViewBackground))
+                        .fill(customBackgroundColor))
+        //.shadow(color: .gray, radius: 5, x: 3, y: 3)
     }
 }

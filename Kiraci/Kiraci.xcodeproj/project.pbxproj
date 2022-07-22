@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0430A62885D9E7000EED0A /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0430A52885D9E7000EED0A /* SideMenu.swift */; };
+		1F14ACE1288590A000BB29F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14ACE0288590A000BB29F9 /* BaseView.swift */; };
+		1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */; };
+		1FA6B03A2888BAFB00921C76 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0392888BAFB00921C76 /* Enums.swift */; };
+		1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */; };
+		1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */; };
+		1FA6B0412888BEA100921C76 /* PaymentInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */; };
+		1FA6B0432888BECC00921C76 /* CorporateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */; };
+		1FA6B0452888BF0C00921C76 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0442888BF0C00921C76 /* SettingsView.swift */; };
+		1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3BF28880B9200934700 /* HeaderView.swift */; };
+		1FC2B3C32888AAC400934700 /* BuildingOwnerDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */; };
+		1FC2B3C72888B3DE00934700 /* RenterDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */; };
 		1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C72882C4D900D91B1E /* KiraciApp.swift */; };
 		1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C92882C4D900D91B1E /* ContentView.swift */; };
 		1FE238CC2882C4D900D91B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE238CB2882C4D900D91B1E /* Assets.xcassets */; };
@@ -17,13 +29,13 @@
 		1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238F82882CCCC00D91B1E /* SignInView.swift */; };
 		1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239002882E8B800D91B1E /* SplashScreenView.swift */; };
 		1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390228835F3C00D91B1E /* SignUpView.swift */; };
-		1FE239052883636200D91B1E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239042883636200D91B1E /* HomeView.swift */; };
+		1FE239052883636200D91B1E /* TryHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239042883636200D91B1E /* TryHomeView.swift */; };
 		1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */; };
 		1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE23909288452B000D91B1E /* ColorExtensions.swift */; };
 		1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */; };
 		1FE2391128848DB700D91B1E /* TabNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391028848DB700D91B1E /* TabNavigationView.swift */; };
-		1FE2391328848E4900D91B1E /* RenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391228848E4900D91B1E /* RenterView.swift */; };
-		1FE2391528848F1200D91B1E /* BuildingOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391428848F1200D91B1E /* BuildingOwnerView.swift */; };
+		1FE2391328848E4900D91B1E /* TryRenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391228848E4900D91B1E /* TryRenterView.swift */; };
+		1FE2391528848F1200D91B1E /* TryBuildingOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */; };
 		1FE2391A2884D9CC00D91B1E /* CloredGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +57,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0430A52885D9E7000EED0A /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		1F14ACE0288590A000BB29F9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViews.swift; sourceTree = "<group>"; };
+		1FA6B0392888BAFB00921C76 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsView.swift; sourceTree = "<group>"; };
+		1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsContractsView.swift; sourceTree = "<group>"; };
+		1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformationView.swift; sourceTree = "<group>"; };
+		1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorporateAccountView.swift; sourceTree = "<group>"; };
+		1FA6B0442888BF0C00921C76 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1FC2B3BF28880B9200934700 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingOwnerDashboardView.swift; sourceTree = "<group>"; };
+		1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterDashboardView.swift; sourceTree = "<group>"; };
 		1FE238C42882C4D900D91B1E /* Kiraci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiraci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE238C72882C4D900D91B1E /* KiraciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiraciApp.swift; sourceTree = "<group>"; };
 		1FE238C92882C4D900D91B1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,13 +83,13 @@
 		1FE238F82882CCCC00D91B1E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1FE239002882E8B800D91B1E /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		1FE2390228835F3C00D91B1E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		1FE239042883636200D91B1E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1FE239042883636200D91B1E /* TryHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryHomeView.swift; sourceTree = "<group>"; };
 		1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		1FE23909288452B000D91B1E /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSignUpShape.swift; sourceTree = "<group>"; };
 		1FE2391028848DB700D91B1E /* TabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationView.swift; sourceTree = "<group>"; };
-		1FE2391228848E4900D91B1E /* RenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterView.swift; sourceTree = "<group>"; };
-		1FE2391428848F1200D91B1E /* BuildingOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingOwnerView.swift; sourceTree = "<group>"; };
+		1FE2391228848E4900D91B1E /* TryRenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryRenterView.swift; sourceTree = "<group>"; };
+		1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryBuildingOwnerView.swift; sourceTree = "<group>"; };
 		1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloredGroupBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +118,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA6B03B2888BE0700921C76 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */,
+				1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */,
+				1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */,
+				1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */,
+				1FA6B0442888BF0C00921C76 /* SettingsView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		1FC2B3C82888B89B00934700 /* Tries */ = {
+			isa = PBXGroup;
+			children = (
+				1FE2391028848DB700D91B1E /* TabNavigationView.swift */,
+				1FE239042883636200D91B1E /* TryHomeView.swift */,
+				1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */,
+				1FE2391228848E4900D91B1E /* TryRenterView.swift */,
+			);
+			path = Tries;
+			sourceTree = "<group>";
+		};
 		1FE238BB2882C4D900D91B1E = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +164,7 @@
 		1FE238C62882C4D900D91B1E /* Kiraci */ = {
 			isa = PBXGroup;
 			children = (
+				1FC2B3C82888B89B00934700 /* Tries */,
 				1FE239162884CC1C00D91B1E /* Style */,
 				1FE239082884528B00D91B1E /* Resources */,
 				1FE238F52882C68D00D91B1E /* Models */,
@@ -160,6 +208,7 @@
 		1FE238F22882C67400D91B1E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1FA6B0392888BAFB00921C76 /* Enums.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -167,15 +216,18 @@
 		1FE238F32882C67F00D91B1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FA6B03B2888BE0700921C76 /* SideMenu */,
 				1FE2390B288455F300D91B1E /* CustomViews */,
 				1FE238F82882CCCC00D91B1E /* SignInView.swift */,
 				1FE239002882E8B800D91B1E /* SplashScreenView.swift */,
 				1FE2390228835F3C00D91B1E /* SignUpView.swift */,
-				1FE239042883636200D91B1E /* HomeView.swift */,
 				1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */,
-				1FE2391028848DB700D91B1E /* TabNavigationView.swift */,
-				1FE2391228848E4900D91B1E /* RenterView.swift */,
-				1FE2391428848F1200D91B1E /* BuildingOwnerView.swift */,
+				1F14ACE0288590A000BB29F9 /* BaseView.swift */,
+				1F0430A52885D9E7000EED0A /* SideMenu.swift */,
+				1FC2B3BF28880B9200934700 /* HeaderView.swift */,
+				1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */,
+				1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */,
+				1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,18 +401,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE2391128848DB700D91B1E /* TabNavigationView.swift in Sources */,
-				1FE2391328848E4900D91B1E /* RenterView.swift in Sources */,
+				1FE2391328848E4900D91B1E /* TryRenterView.swift in Sources */,
+				1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */,
 				1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */,
 				1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */,
+				1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */,
 				1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */,
 				1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */,
+				1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */,
 				1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */,
-				1FE239052883636200D91B1E /* HomeView.swift in Sources */,
+				1FA6B0452888BF0C00921C76 /* SettingsView.swift in Sources */,
+				1FE239052883636200D91B1E /* TryHomeView.swift in Sources */,
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
-				1FE2391528848F1200D91B1E /* BuildingOwnerView.swift in Sources */,
+				1FA6B0412888BEA100921C76 /* PaymentInformationView.swift in Sources */,
+				1FE2391528848F1200D91B1E /* TryBuildingOwnerView.swift in Sources */,
+				1FA6B0432888BECC00921C76 /* CorporateAccountView.swift in Sources */,
+				1F14ACE1288590A000BB29F9 /* BaseView.swift in Sources */,
+				1F0430A62885D9E7000EED0A /* SideMenu.swift in Sources */,
 				1FE2391A2884D9CC00D91B1E /* CloredGroupBox.swift in Sources */,
+				1FC2B3C32888AAC400934700 /* BuildingOwnerDashboardView.swift in Sources */,
+				1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */,
 				1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */,
+				1FC2B3C72888B3DE00934700 /* RenterDashboardView.swift in Sources */,
+				1FA6B03A2888BAFB00921C76 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
