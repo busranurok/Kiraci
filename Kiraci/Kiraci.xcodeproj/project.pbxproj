@@ -15,7 +15,7 @@
 		1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */; };
 		1FA6B0412888BEA100921C76 /* PaymentInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */; };
 		1FA6B0432888BECC00921C76 /* CorporateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */; };
-		1FA6B0452888BF0C00921C76 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0442888BF0C00921C76 /* SettingsView.swift */; };
+		1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */; };
 		1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3BF28880B9200934700 /* HeaderView.swift */; };
 		1FC2B3C32888AAC400934700 /* BuildingOwnerDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */; };
 		1FC2B3C72888B3DE00934700 /* RenterDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */; };
@@ -37,6 +37,9 @@
 		1FE2391328848E4900D91B1E /* TryRenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391228848E4900D91B1E /* TryRenterView.swift */; };
 		1FE2391528848F1200D91B1E /* TryBuildingOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */; };
 		1FE2391A2884D9CC00D91B1E /* CloredGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */; };
+		1FE8CE93288C35A600B8D0C8 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8CE92288C35A600B8D0C8 /* ChangePasswordView.swift */; };
+		1FE8CE95288C35C600B8D0C8 /* ChangeLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8CE94288C35C600B8D0C8 /* ChangeLanguageView.swift */; };
+		1FE8CE97288C4D3D00B8D0C8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8CE96288C4D3D00B8D0C8 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +68,7 @@
 		1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsContractsView.swift; sourceTree = "<group>"; };
 		1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformationView.swift; sourceTree = "<group>"; };
 		1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorporateAccountView.swift; sourceTree = "<group>"; };
-		1FA6B0442888BF0C00921C76 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingsView.swift; sourceTree = "<group>"; };
 		1FC2B3BF28880B9200934700 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingOwnerDashboardView.swift; sourceTree = "<group>"; };
 		1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterDashboardView.swift; sourceTree = "<group>"; };
@@ -91,6 +94,9 @@
 		1FE2391228848E4900D91B1E /* TryRenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryRenterView.swift; sourceTree = "<group>"; };
 		1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryBuildingOwnerView.swift; sourceTree = "<group>"; };
 		1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloredGroupBox.swift; sourceTree = "<group>"; };
+		1FE8CE92288C35A600B8D0C8 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		1FE8CE94288C35C600B8D0C8 /* ChangeLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLanguageView.swift; sourceTree = "<group>"; };
+		1FE8CE96288C4D3D00B8D0C8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +127,11 @@
 		1FA6B03B2888BE0700921C76 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1FE8CE91288C357300B8D0C8 /* Settings */,
 				1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */,
 				1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */,
 				1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */,
 				1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */,
-				1FA6B0442888BF0C00921C76 /* SettingsView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 		1FC2B3C82888B89B00934700 /* Tries */ = {
 			isa = PBXGroup;
 			children = (
+				1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */,
 				1FE2391028848DB700D91B1E /* TabNavigationView.swift */,
 				1FE239042883636200D91B1E /* TryHomeView.swift */,
 				1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */,
@@ -268,6 +275,16 @@
 				1FE239192884D9CC00D91B1E /* CloredGroupBox.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		1FE8CE91288C357300B8D0C8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1FE8CE92288C35A600B8D0C8 /* ChangePasswordView.swift */,
+				1FE8CE94288C35C600B8D0C8 /* ChangeLanguageView.swift */,
+				1FE8CE96288C4D3D00B8D0C8 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,7 +427,7 @@
 				1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */,
 				1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */,
 				1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */,
-				1FA6B0452888BF0C00921C76 /* SettingsView.swift in Sources */,
+				1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */,
 				1FE239052883636200D91B1E /* TryHomeView.swift in Sources */,
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
@@ -419,10 +436,13 @@
 				1FA6B0432888BECC00921C76 /* CorporateAccountView.swift in Sources */,
 				1F14ACE1288590A000BB29F9 /* BaseView.swift in Sources */,
 				1F0430A62885D9E7000EED0A /* SideMenu.swift in Sources */,
+				1FE8CE93288C35A600B8D0C8 /* ChangePasswordView.swift in Sources */,
 				1FE2391A2884D9CC00D91B1E /* CloredGroupBox.swift in Sources */,
+				1FE8CE97288C4D3D00B8D0C8 /* SettingsView.swift in Sources */,
 				1FC2B3C32888AAC400934700 /* BuildingOwnerDashboardView.swift in Sources */,
 				1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */,
 				1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */,
+				1FE8CE95288C35C600B8D0C8 /* ChangeLanguageView.swift in Sources */,
 				1FC2B3C72888B3DE00934700 /* RenterDashboardView.swift in Sources */,
 				1FA6B03A2888BAFB00921C76 /* Enums.swift in Sources */,
 			);

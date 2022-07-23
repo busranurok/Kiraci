@@ -100,7 +100,7 @@ struct SideMenu: View {
                     
                 }
                 .padding([.horizontal, .top], 30)
-                .foregroundColor(.black)
+                .foregroundColor(.red)
                 
             }
             

@@ -58,7 +58,7 @@ struct HeaderView: View {
                                 .foregroundColor(.gray)
                             
                         }
-                        .navigationTitle("Dashboard")
+                        //.navigationTitle("Dashboard")
                         
                         if count != 0 {
                             

@@ -39,9 +39,9 @@ struct BaseView: View {
                 // Main Tab View...
                 VStack(spacing: 0) {
                     
-                    HeaderView(showMenu: $showMenu)
-                        .frame(maxHeight: 40)
-                    
+                        HeaderView(showMenu: $showMenu)
+                            .frame(maxHeight: 40)
+        
                     // MARK: Page Selection
                     switch currentPage {
                         
@@ -237,6 +237,7 @@ extension BaseView {
             if currentTab == DashboardPages.renter {
                 
                 RenterDashboardView()
+                    .navigationTitle("Dashboard")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
                 //En üst view de isem padding veremem. Bir üst view e göre poadding verilir.
@@ -245,6 +246,7 @@ extension BaseView {
             } else {
                 
                 BuildingOwnerDashboardView()
+                    .navigationTitle("Dashboard")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
                     .padding(.top, 80)
@@ -261,7 +263,6 @@ extension BaseView {
         MyBuildingsView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .background(.green)
         
     }
     
@@ -273,7 +274,6 @@ extension BaseView {
         MyBuildingsContractsView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .background(.green)
         
     }
     
@@ -285,7 +285,6 @@ extension BaseView {
         PaymentInformationView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .background(.green)
         
     }
     
@@ -297,19 +296,18 @@ extension BaseView {
         CorporateAccountView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .background(.green)
         
     }
     
     @ViewBuilder
     func VBSettingsView() -> some View {
         
-        Spacer()
+        //Bunu silmemin sebebi settingview in içerisinde list tanımlamam. List tanımladığım için aşağı atıyor ve boşluk bırakıyor. Boşluk bırakmasını istemediğim için spacer i sildim.
+        //Spacer()
         
         SettingsView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
-            .background(.green)
         
     }
     
