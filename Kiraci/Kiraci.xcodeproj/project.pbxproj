@@ -129,7 +129,9 @@
 		1FA6B03B2888BE0700921C76 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1F0430A52885D9E7000EED0A /* SideMenu.swift */,
 				1FE8CE91288C357300B8D0C8 /* Settings */,
+				1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */,
 				1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */,
 				1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */,
 				1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */,
@@ -232,7 +234,6 @@
 				1FE2390228835F3C00D91B1E /* SignUpView.swift */,
 				1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */,
 				1F14ACE0288590A000BB29F9 /* BaseView.swift */,
-				1F0430A52885D9E7000EED0A /* SideMenu.swift */,
 				1FC2B3BF28880B9200934700 /* HeaderView.swift */,
 				1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */,
 				1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */,
@@ -285,7 +286,6 @@
 				1FE8CE92288C35A600B8D0C8 /* ChangePasswordView.swift */,
 				1FE8CE94288C35C600B8D0C8 /* ChangeLanguageView.swift */,
 				1FE8CE96288C4D3D00B8D0C8 /* SettingsView.swift */,
-				1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";

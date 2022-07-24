@@ -1,13 +1,13 @@
 //
-//  MyBuildingsView.swift
+//  MyRentedBuildings.swift
 //  Kiraci
 //
-//  Created by BusranurOK on 21.07.2022.
+//  Created by BusranurOK on 24.07.2022.
 //
 
 import SwiftUI
 
-struct MyBuildingsView: View {
+struct MyRentedBuildingsView: View {
     
     var body: some View {
         

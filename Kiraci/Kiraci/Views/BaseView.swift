@@ -261,8 +261,6 @@ extension BaseView {
     @ViewBuilder
     func VBMyRentedBuildingsView() -> some View {
         
-        Spacer()
-        
         MyRentedBuildingsView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
@@ -271,8 +269,6 @@ extension BaseView {
     
     @ViewBuilder
     func VBMyRentedContractsView() -> some View {
-        
-        Spacer()
         
         MyRentedContractsView()
             .navigationBarTitleDisplayMode(.inline)
@@ -283,8 +279,6 @@ extension BaseView {
     @ViewBuilder
     func VBMyBuildingsView() -> some View {
         
-        Spacer()
-        
         MyBuildingsView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
@@ -293,8 +287,6 @@ extension BaseView {
     
     @ViewBuilder
     func VBMyBuildingsContractsView() -> some View {
-        
-        Spacer()
         
         MyBuildingsContractsView()
             .navigationBarTitleDisplayMode(.inline)

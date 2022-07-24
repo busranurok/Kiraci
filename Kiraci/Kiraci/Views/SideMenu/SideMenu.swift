@@ -30,19 +30,21 @@ struct SideMenu: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Image(systemName: "person")
+                    Image("femaleavatar")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 65, height: 65)
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.black, lineWidth: 5))
+                        .overlay(Circle().stroke(Color.white, lineWidth: 2))
                     
                     
-                    Text("Büşra Nur")
+                    Text("Büşra Nur OK")
                         .font(.title2.bold())
+                        .foregroundColor(.white)
                     
                     Text("Kiracı & Mülk Sahibi")
                         .font(.callout)
+                        .foregroundColor(.white)
                     
                 }
                 .padding(.horizontal)
