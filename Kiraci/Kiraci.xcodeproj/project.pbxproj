@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		1F0430A62885D9E7000EED0A /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0430A52885D9E7000EED0A /* SideMenu.swift */; };
 		1F14ACE1288590A000BB29F9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14ACE0288590A000BB29F9 /* BaseView.swift */; };
+		1F39DAE3288DA9FF001DC3AE /* MyRentedBuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */; };
+		1F39DAE5288DAA72001DC3AE /* MyRentedContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */; };
+		1F39DAE7288DAAE9001DC3AE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39DAE6288DAAE9001DC3AE /* ProfileView.swift */; };
 		1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */; };
 		1FA6B03A2888BAFB00921C76 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0392888BAFB00921C76 /* Enums.swift */; };
 		1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */; };
 		1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */; };
-		1FA6B0412888BEA100921C76 /* PaymentInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */; };
-		1FA6B0432888BECC00921C76 /* CorporateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */; };
 		1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */; };
 		1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3BF28880B9200934700 /* HeaderView.swift */; };
 		1FC2B3C32888AAC400934700 /* BuildingOwnerDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */; };
@@ -62,12 +63,13 @@
 /* Begin PBXFileReference section */
 		1F0430A52885D9E7000EED0A /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		1F14ACE0288590A000BB29F9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRentedBuildingsView.swift; sourceTree = "<group>"; };
+		1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRentedContractsView.swift; sourceTree = "<group>"; };
+		1F39DAE6288DAAE9001DC3AE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViews.swift; sourceTree = "<group>"; };
 		1FA6B0392888BAFB00921C76 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsView.swift; sourceTree = "<group>"; };
 		1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsContractsView.swift; sourceTree = "<group>"; };
-		1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInformationView.swift; sourceTree = "<group>"; };
-		1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorporateAccountView.swift; sourceTree = "<group>"; };
 		1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingsView.swift; sourceTree = "<group>"; };
 		1FC2B3BF28880B9200934700 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingOwnerDashboardView.swift; sourceTree = "<group>"; };
@@ -130,8 +132,8 @@
 				1FE8CE91288C357300B8D0C8 /* Settings */,
 				1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */,
 				1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */,
-				1FA6B0402888BEA100921C76 /* PaymentInformationView.swift */,
-				1FA6B0422888BECC00921C76 /* CorporateAccountView.swift */,
+				1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */,
+				1F39DAE6288DAAE9001DC3AE /* ProfileView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -283,6 +285,7 @@
 				1FE8CE92288C35A600B8D0C8 /* ChangePasswordView.swift */,
 				1FE8CE94288C35C600B8D0C8 /* ChangeLanguageView.swift */,
 				1FE8CE96288C4D3D00B8D0C8 /* SettingsView.swift */,
+				1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -422,18 +425,19 @@
 				1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */,
 				1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */,
 				1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */,
+				1F39DAE3288DA9FF001DC3AE /* MyRentedBuildingsView.swift in Sources */,
 				1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */,
 				1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */,
 				1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */,
 				1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */,
+				1F39DAE5288DAA72001DC3AE /* MyRentedContractsView.swift in Sources */,
+				1F39DAE7288DAAE9001DC3AE /* ProfileView.swift in Sources */,
 				1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */,
 				1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */,
 				1FE239052883636200D91B1E /* TryHomeView.swift in Sources */,
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
-				1FA6B0412888BEA100921C76 /* PaymentInformationView.swift in Sources */,
 				1FE2391528848F1200D91B1E /* TryBuildingOwnerView.swift in Sources */,
-				1FA6B0432888BECC00921C76 /* CorporateAccountView.swift in Sources */,
 				1F14ACE1288590A000BB29F9 /* BaseView.swift in Sources */,
 				1F0430A62885D9E7000EED0A /* SideMenu.swift in Sources */,
 				1FE8CE93288C35A600B8D0C8 /* ChangePasswordView.swift in Sources */,

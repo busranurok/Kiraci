@@ -10,7 +10,7 @@ import SwiftUI
 struct BaseView: View {
     
     @State var showMenu: Bool = false
-    @State var currentPage = Pages.dashboard
+    @State var currentPage = Page.dashboard
     
     // Hiding Native One
     init() {
@@ -18,7 +18,7 @@ struct BaseView: View {
         UITabBar.appearance().isHidden = true
     }
     
-    @State var currentTab = DashboardPages.renter
+    @State var currentTab = DashboardPage.renter
     
     // Offset for Both Drag Gesuture and showing Menu...
     @State var offset: CGFloat = 0
@@ -71,20 +71,23 @@ struct BaseView: View {
                     case .dashboard:
                         VBDashboardView()
                         
+                    case .myRentedBuildings:
+                        VBMyRentedBuildingsView()
+                        
+                    case .myRentedContracts:
+                        VBMyRentedContractsView()
+                        
                     case .myBuildings:
                         VBMyBuildingsView()
                         
                     case .myBuildingsContracts:
                         VBMyBuildingsContractsView()
                         
-                    case .paymentInformation:
-                        VBPaymentInformationView()
-                        
-                    case .corporateAccount:
-                        VBCorporateAccountView()
-                        
                     case .settings:
                         VBSettingsView()
+                        
+                    case .profile:
+                        VBProfileView()
                         
                     }
                     
@@ -126,7 +129,7 @@ struct BaseView: View {
                     }*/
                     
                     //MARK: Tab Bar for Dashboard
-                    if currentPage == Pages.dashboard {
+                    if currentPage == Page.dashboard {
                         
                         // Custom Tab Bar...
                         VStack(spacing: 0) {
@@ -201,7 +204,7 @@ struct BaseView: View {
     }
     
     @ViewBuilder
-    func TabButton(title: String, image: UIImage, page: DashboardPages) -> some View {
+    func TabButton(title: String, image: UIImage, page: DashboardPage) -> some View {
 
         Button {
             
@@ -234,7 +237,7 @@ extension BaseView {
         
         TabView(selection: $currentTab) {
             
-            if currentTab == DashboardPages.renter {
+            if currentTab == DashboardPage.renter {
                 
                 RenterDashboardView()
                     .navigationTitle("Dashboard")
@@ -252,6 +255,28 @@ extension BaseView {
                     .padding(.top, 80)
             }
         }
+        
+    }
+    
+    @ViewBuilder
+    func VBMyRentedBuildingsView() -> some View {
+        
+        Spacer()
+        
+        MyRentedBuildingsView()
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+        
+    }
+    
+    @ViewBuilder
+    func VBMyRentedContractsView() -> some View {
+        
+        Spacer()
+        
+        MyRentedContractsView()
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         
     }
     
@@ -278,34 +303,23 @@ extension BaseView {
     }
     
     @ViewBuilder
-    func VBPaymentInformationView() -> some View {
-        
-        Spacer()
-        
-        PaymentInformationView()
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
-        
-    }
-    
-    @ViewBuilder
-    func VBCorporateAccountView() -> some View {
-        
-        Spacer()
-        
-        CorporateAccountView()
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
-        
-    }
-    
-    @ViewBuilder
     func VBSettingsView() -> some View {
         
         //Bunu silmemin sebebi settingview in içerisinde list tanımlamam. List tanımladığım için aşağı atıyor ve boşluk bırakıyor. Boşluk bırakmasını istemediğim için spacer i sildim.
         //Spacer()
         
         SettingsView()
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+        
+    }
+    
+    @ViewBuilder
+    func VBProfileView() -> some View {
+        
+        Spacer()
+        
+        ProfileView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
         

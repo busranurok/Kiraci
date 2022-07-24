@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-enum Pages: String {
+enum Page: String {
 
     case dashboard = "Ana sayfa"
+    case myRentedBuildings = "Kiracı Olduğum Mülkler"
+    case myRentedContracts = "Kiracısı Olduğum Sözleşmeler"
     case myBuildings = "Mülklerim"
     case myBuildingsContracts = "Mülklerime Ait Sözleşmeler"
-    case paymentInformation = "Ödeme Bilgisi"
-    case corporateAccount = "Kurumsal Hesap"
     case settings = "Ayarlar"
+    case profile = "Profil"
     
 }
 
-enum DashboardPages: String {
+enum DashboardPage: String {
     
     case renter = "Kiracı"
     case buildingOwner = "Mülk Sahibi"

@@ -223,6 +223,7 @@ struct SignInView: View {
             }
         }
         .accentColor(Color.renterText)
+        .navigationBarHidden(true)
         
     }
 }

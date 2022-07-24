@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct SideMenu: View {
-    
+
     @Binding var showMenu: Bool
-    @Binding var currentPage: Pages
-        
-    init(showMenu: Binding<Bool>, currentPage: Binding<Pages>) {
+    @Binding var currentPage: Page
+    
+    init(showMenu: Binding<Bool>, currentPage: Binding<Page>) {
         
         self._showMenu = showMenu
         self._currentPage = currentPage
@@ -62,15 +62,17 @@ struct SideMenu: View {
                     // Tab buttons...
                     TabButton(title: "Ana sayfa", image: UIImage(systemName: "house")!, page: .dashboard)
                     
+                    TabButton(title: "Kiracı Olduğum Mülkler", image: UIImage(systemName: "house")!, page: .myRentedBuildings)
+                    
+                    TabButton(title: "Kiracısı Olduğum Sözleşmeler", image: UIImage(systemName: "doc.text")!, page: .myRentedContracts)
+                    
                     TabButton(title: "Mülklerim", image: UIImage(systemName: "house")!, page: .myBuildings)
                     
                     TabButton(title: "Mülklerime Ait Sözleşmeler", image: UIImage(systemName: "doc.text")!, page: .myBuildingsContracts)
                     
-                    TabButton(title: "Ödeme Bilgisi", image: UIImage(systemName: "banknote")!, page: .paymentInformation)
-                    
-                    TabButton(title: "Kurumsal Hesap", image: UIImage(systemName: "building.2")!, page: .corporateAccount)
-                    
                     TabButton(title: "Ayarlar", image: UIImage(systemName: "gear")!, page: .settings)
+                    
+                    TabButton(title: "Profil", image: UIImage(systemName: "person.crop.circle")!, page: .profile)
                     
                 }
                 .padding()
@@ -90,15 +92,21 @@ struct SideMenu: View {
                     
                     
                 } label: {
-                    
-                    Image(systemName: "xmark.circle")
-                        .resizable()
-                        .renderingMode(.template)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 50, height: 50)
-                        .clipShape(Circle())
+                        
+                    NavigationLink(destination: SignInView()) {
+                        
+                        Image(systemName: "xmark.circle")
+                            .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                        
+                    }
+                       
                     
                 }
+                .navigationBarHidden(true)
                 .padding([.horizontal, .top], 30)
                 .foregroundColor(.red)
                 
@@ -123,7 +131,7 @@ struct SideMenu: View {
     }
     
     @ViewBuilder
-    func TabButton(title: String, image: UIImage, page: Pages) -> some View {
+    func TabButton(title: String, image: UIImage, page: Page) -> some View {
         // For navigation...
         Button {
             
