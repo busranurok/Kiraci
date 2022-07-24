@@ -24,3 +24,16 @@ enum DashboardPages: String {
     case buildingOwner = "Mülk Sahibi"
     
 }
+
+enum Language: String, CaseIterable {
+    
+    case turkish = "Turkish"
+    case english = "English"
+    
+    var flag: String {
+        
+        self == .turkish  ? "turkishflag" : "englishflag"
+        
+    }
+    
+}
