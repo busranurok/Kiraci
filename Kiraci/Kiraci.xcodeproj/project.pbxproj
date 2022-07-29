@@ -12,14 +12,21 @@
 		1F39DAE3288DA9FF001DC3AE /* MyRentedBuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */; };
 		1F39DAE5288DAA72001DC3AE /* MyRentedContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */; };
 		1F39DAE7288DAAE9001DC3AE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39DAE6288DAAE9001DC3AE /* ProfileView.swift */; };
-		1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */; };
+		1F6E2AE02892EF32003F29D6 /* TryCustomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E2ADF2892EF32003F29D6 /* TryCustomDetailView.swift */; };
+		1F6E2AE22892F225003F29D6 /* TryCustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E2AE12892F225003F29D6 /* TryCustomCardView.swift */; };
+		1F9E0A7F288AF31D00D07C0A /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E0A7E288AF31D00D07C0A /* NotificationsView.swift */; };
 		1FA6B03A2888BAFB00921C76 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0392888BAFB00921C76 /* Enums.swift */; };
 		1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */; };
 		1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */; };
 		1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */; };
+		1FBE8CA22890178F0026ACA5 /* BuildingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE8CA12890178F0026ACA5 /* BuildingDetail.swift */; };
 		1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3BF28880B9200934700 /* HeaderView.swift */; };
 		1FC2B3C32888AAC400934700 /* BuildingOwnerDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */; };
 		1FC2B3C72888B3DE00934700 /* RenterDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */; };
+		1FC37F732893C25800D592B7 /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC37F722893C25800D592B7 /* ContractDetailView.swift */; };
+		1FC37F752893C67E00D592B7 /* ContractCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC37F742893C67E00D592B7 /* ContractCardView.swift */; };
+		1FC37F78289442D200D592B7 /* CustomLoadingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC37F77289442D200D592B7 /* CustomLoadingAnimationView.swift */; };
+		1FC37F7A289464FD00D592B7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC37F79289464FC00D592B7 /* SignUpView.swift */; };
 		1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C72882C4D900D91B1E /* KiraciApp.swift */; };
 		1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C92882C4D900D91B1E /* ContentView.swift */; };
 		1FE238CC2882C4D900D91B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE238CB2882C4D900D91B1E /* Assets.xcassets */; };
@@ -29,11 +36,11 @@
 		1FE238E52882C4DA00D91B1E /* KiraciUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238E42882C4DA00D91B1E /* KiraciUITestsLaunchTests.swift */; };
 		1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238F82882CCCC00D91B1E /* SignInView.swift */; };
 		1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239002882E8B800D91B1E /* SplashScreenView.swift */; };
-		1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390228835F3C00D91B1E /* SignUpView.swift */; };
+		1FE2390328835F3C00D91B1E /* TryCustomSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390228835F3C00D91B1E /* TryCustomSignUpView.swift */; };
 		1FE239052883636200D91B1E /* TryHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE239042883636200D91B1E /* TryHomeView.swift */; };
 		1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */; };
 		1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE23909288452B000D91B1E /* ColorExtensions.swift */; };
-		1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */; };
+		1FE2390D2884565E00D91B1E /* CustomSignUpShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2390C2884565E00D91B1E /* CustomSignUpShapeView.swift */; };
 		1FE2391128848DB700D91B1E /* TabNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391028848DB700D91B1E /* TabNavigationView.swift */; };
 		1FE2391328848E4900D91B1E /* TryRenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391228848E4900D91B1E /* TryRenterView.swift */; };
 		1FE2391528848F1200D91B1E /* TryBuildingOwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */; };
@@ -66,14 +73,21 @@
 		1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRentedBuildingsView.swift; sourceTree = "<group>"; };
 		1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRentedContractsView.swift; sourceTree = "<group>"; };
 		1F39DAE6288DAAE9001DC3AE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViews.swift; sourceTree = "<group>"; };
+		1F6E2ADF2892EF32003F29D6 /* TryCustomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCustomDetailView.swift; sourceTree = "<group>"; };
+		1F6E2AE12892F225003F29D6 /* TryCustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCustomCardView.swift; sourceTree = "<group>"; };
+		1F9E0A7E288AF31D00D07C0A /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		1FA6B0392888BAFB00921C76 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsView.swift; sourceTree = "<group>"; };
 		1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsContractsView.swift; sourceTree = "<group>"; };
 		1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingsView.swift; sourceTree = "<group>"; };
+		1FBE8CA12890178F0026ACA5 /* BuildingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDetail.swift; sourceTree = "<group>"; };
 		1FC2B3BF28880B9200934700 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingOwnerDashboardView.swift; sourceTree = "<group>"; };
 		1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenterDashboardView.swift; sourceTree = "<group>"; };
+		1FC37F722893C25800D592B7 /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
+		1FC37F742893C67E00D592B7 /* ContractCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractCardView.swift; sourceTree = "<group>"; };
+		1FC37F77289442D200D592B7 /* CustomLoadingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingAnimationView.swift; sourceTree = "<group>"; };
+		1FC37F79289464FC00D592B7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1FE238C42882C4D900D91B1E /* Kiraci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiraci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE238C72882C4D900D91B1E /* KiraciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiraciApp.swift; sourceTree = "<group>"; };
 		1FE238C92882C4D900D91B1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,11 +101,11 @@
 		1FE238F12882C4F800D91B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1FE238F82882CCCC00D91B1E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		1FE239002882E8B800D91B1E /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
-		1FE2390228835F3C00D91B1E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1FE2390228835F3C00D91B1E /* TryCustomSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryCustomSignUpView.swift; sourceTree = "<group>"; };
 		1FE239042883636200D91B1E /* TryHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryHomeView.swift; sourceTree = "<group>"; };
 		1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		1FE23909288452B000D91B1E /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSignUpShape.swift; sourceTree = "<group>"; };
+		1FE2390C2884565E00D91B1E /* CustomSignUpShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSignUpShapeView.swift; sourceTree = "<group>"; };
 		1FE2391028848DB700D91B1E /* TabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationView.swift; sourceTree = "<group>"; };
 		1FE2391228848E4900D91B1E /* TryRenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryRenterView.swift; sourceTree = "<group>"; };
 		1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryBuildingOwnerView.swift; sourceTree = "<group>"; };
@@ -129,13 +143,16 @@
 		1FA6B03B2888BE0700921C76 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				1F0430A52885D9E7000EED0A /* SideMenu.swift */,
 				1FE8CE91288C357300B8D0C8 /* Settings */,
 				1F39DAE2288DA9FF001DC3AE /* MyRentedBuildingsView.swift */,
+				1F0430A52885D9E7000EED0A /* SideMenu.swift */,
 				1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */,
 				1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */,
+				1FBE8CA12890178F0026ACA5 /* BuildingDetail.swift */,
 				1F39DAE4288DAA72001DC3AE /* MyRentedContractsView.swift */,
 				1F39DAE6288DAAE9001DC3AE /* ProfileView.swift */,
+				1FC37F722893C25800D592B7 /* ContractDetailView.swift */,
+				1FC37F742893C67E00D592B7 /* ContractCardView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -143,13 +160,25 @@
 		1FC2B3C82888B89B00934700 /* Tries */ = {
 			isa = PBXGroup;
 			children = (
+				1FE2390C2884565E00D91B1E /* CustomSignUpShapeView.swift */,
+				1FE2390228835F3C00D91B1E /* TryCustomSignUpView.swift */,
 				1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */,
 				1FE2391028848DB700D91B1E /* TabNavigationView.swift */,
 				1FE239042883636200D91B1E /* TryHomeView.swift */,
 				1FE2391428848F1200D91B1E /* TryBuildingOwnerView.swift */,
 				1FE2391228848E4900D91B1E /* TryRenterView.swift */,
+				1F6E2ADF2892EF32003F29D6 /* TryCustomDetailView.swift */,
+				1F6E2AE12892F225003F29D6 /* TryCustomCardView.swift */,
 			);
 			path = Tries;
+			sourceTree = "<group>";
+		};
+		1FC37F76289442B300D592B7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1FC37F77289442D200D592B7 /* CustomLoadingAnimationView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		1FE238BB2882C4D900D91B1E = {
@@ -227,17 +256,17 @@
 		1FE238F32882C67F00D91B1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FC37F76289442B300D592B7 /* CustomView */,
 				1FA6B03B2888BE0700921C76 /* SideMenu */,
-				1FE2390B288455F300D91B1E /* CustomViews */,
 				1FE238F82882CCCC00D91B1E /* SignInView.swift */,
+				1FC37F79289464FC00D592B7 /* SignUpView.swift */,
 				1FE239002882E8B800D91B1E /* SplashScreenView.swift */,
-				1FE2390228835F3C00D91B1E /* SignUpView.swift */,
 				1FE2390628836E1F00D91B1E /* ForgetPasswordView.swift */,
 				1F14ACE0288590A000BB29F9 /* BaseView.swift */,
 				1FC2B3BF28880B9200934700 /* HeaderView.swift */,
 				1FC2B3C22888AAC400934700 /* BuildingOwnerDashboardView.swift */,
 				1FC2B3C62888B3DE00934700 /* RenterDashboardView.swift */,
-				1F9E0A7E288AF31D00D07C0A /* NotificationViews.swift */,
+				1F9E0A7E288AF31D00D07C0A /* NotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,14 +291,6 @@
 				1FE23909288452B000D91B1E /* ColorExtensions.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		1FE2390B288455F300D91B1E /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				1FE2390C2884565E00D91B1E /* CustomSignUpShape.swift */,
-			);
-			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		1FE239162884CC1C00D91B1E /* Style */ = {
@@ -422,18 +443,22 @@
 			files = (
 				1FE2391128848DB700D91B1E /* TabNavigationView.swift in Sources */,
 				1FE2391328848E4900D91B1E /* TryRenterView.swift in Sources */,
+				1FBE8CA22890178F0026ACA5 /* BuildingDetail.swift in Sources */,
+				1F6E2AE02892EF32003F29D6 /* TryCustomDetailView.swift in Sources */,
 				1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */,
 				1FE238F92882CCCC00D91B1E /* SignInView.swift in Sources */,
-				1FE2390328835F3C00D91B1E /* SignUpView.swift in Sources */,
+				1FC37F7A289464FD00D592B7 /* SignUpView.swift in Sources */,
+				1FE2390328835F3C00D91B1E /* TryCustomSignUpView.swift in Sources */,
 				1F39DAE3288DA9FF001DC3AE /* MyRentedBuildingsView.swift in Sources */,
 				1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */,
 				1FE238CA2882C4D900D91B1E /* ContentView.swift in Sources */,
 				1FE2390728836E1F00D91B1E /* ForgetPasswordView.swift in Sources */,
-				1F9E0A7F288AF31D00D07C0A /* NotificationViews.swift in Sources */,
+				1F9E0A7F288AF31D00D07C0A /* NotificationsView.swift in Sources */,
 				1F39DAE5288DAA72001DC3AE /* MyRentedContractsView.swift in Sources */,
 				1F39DAE7288DAAE9001DC3AE /* ProfileView.swift in Sources */,
-				1FE2390D2884565E00D91B1E /* CustomSignUpShape.swift in Sources */,
+				1FE2390D2884565E00D91B1E /* CustomSignUpShapeView.swift in Sources */,
 				1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */,
+				1FC37F78289442D200D592B7 /* CustomLoadingAnimationView.swift in Sources */,
 				1FE239052883636200D91B1E /* TryHomeView.swift in Sources */,
 				1FE238C82882C4D900D91B1E /* KiraciApp.swift in Sources */,
 				1FE239012882E8B800D91B1E /* SplashScreenView.swift in Sources */,
@@ -447,8 +472,11 @@
 				1FC2B3C028880B9200934700 /* HeaderView.swift in Sources */,
 				1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */,
 				1FE8CE95288C35C600B8D0C8 /* ChangeLanguageView.swift in Sources */,
+				1FC37F732893C25800D592B7 /* ContractDetailView.swift in Sources */,
+				1FC37F752893C67E00D592B7 /* ContractCardView.swift in Sources */,
 				1FC2B3C72888B3DE00934700 /* RenterDashboardView.swift in Sources */,
 				1FA6B03A2888BAFB00921C76 /* Enums.swift in Sources */,
+				1F6E2AE22892F225003F29D6 /* TryCustomCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

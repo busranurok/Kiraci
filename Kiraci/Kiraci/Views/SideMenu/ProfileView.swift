@@ -18,7 +18,7 @@ struct ProfileView: View {
             HStack {
                 
                 VStack(spacing: 0 ) {
-                    
+
                     /*Rectangle()
                         .fill(.red)
                         .frame(width: 100, height: 3)*/
@@ -233,6 +233,7 @@ struct ProfileView: View {
             Spacer(minLength: 0)
             
         }
+        .navigationTitle("")
     }
 }
 

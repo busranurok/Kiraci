@@ -44,9 +44,7 @@ struct HeaderView: View {
                         // Navigation Link..
                        NavigationLink {
                             
-                           NotificationViews()
-                               .navigationTitle("Notifications")
-                            
+                           NotificationsView()
                             
                         } label: {
                             
@@ -58,7 +56,6 @@ struct HeaderView: View {
                                 .foregroundColor(.gray)
                             
                         }
-                        //.navigationTitle("Dashboard")
                         
                         if count != 0 {
                             

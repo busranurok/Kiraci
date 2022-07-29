@@ -18,30 +18,28 @@ struct SettingsView: View {
                 NavigationLink {
                     
                     ChangePasswordView()
-                        .navigationTitle("Change Password")
                     
                 } label: {
                     
                     Text("Change Password")
                     
                 }
-                .navigationTitle("Settings")
                 
                 NavigationLink {
                     
                     ChangeLanguageView()
-                        .navigationTitle("Change Language")
                     
                 } label: {
                     
                     Text("Change Language")
                     
                 }
-                .navigationTitle("Settings")
+               
                 
             }
             .listStyle(.sidebar)
             
         }
+        .navigationTitle("")
     }
 }

@@ -97,21 +97,25 @@ struct SideMenu: View {
                         
                     NavigationLink(destination: SignInView()) {
                         
-                        Image(systemName: "xmark.circle")
-                            .resizable()
-                            .renderingMode(.template)
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 50, height: 50)
-                            .clipShape(Circle())
+                        HStack {
+                            
+                            Image(systemName: "xmark.circle")
+                                .resizable()
+                                .renderingMode(.template)
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 30, height: 30)
+                                .clipShape(Circle())
+                            
+                            Text("Sign Out")
+                            
+                        }
                         
                     }
-                       
                     
                 }
                 .navigationBarHidden(true)
                 .padding([.horizontal, .top], 30)
                 .foregroundColor(.red)
-                
             }
             
         }

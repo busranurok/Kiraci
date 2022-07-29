@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NotificationViews: View {
+struct NotificationsView: View {
     
     var body: some View {
         
@@ -79,6 +79,7 @@ struct NotificationViews: View {
                     .padding(.top, 8)
                     
                 }
+                .navigationTitle("Notifications")
             }
         }
     }

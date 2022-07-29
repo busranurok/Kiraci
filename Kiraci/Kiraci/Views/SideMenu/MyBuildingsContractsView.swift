@@ -15,96 +15,102 @@ struct MyBuildingsContractsView: View {
             
             VStack(spacing: -20) {
                 
-                GroupBox {
+                NavigationLink(destination: ContractDetailView()) {
                     
-                    HStack(spacing: 20) {
+                    GroupBox {
                         
-                        Image(systemName: "doc.text")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 30, height: 30)
-                        
-                        VStack(alignment: .leading, spacing: 10) {
+                        HStack(spacing: 20) {
                             
-                            Text("Sözleşme")
-                                .font(.title3)
+                            Image(systemName: "doc.text")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 30, height: 30)
                             
-                            Text("Pendik Evim")
-                                .font(.title2)
+                            VStack(alignment: .leading, spacing: 10) {
+                                
+                                Text("Sözleşme")
+                                    .font(.title3)
+                                
+                                Text("Pendik Evim")
+                                    .font(.title2)
+                                
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
                             
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        Spacer()
-                        
-                        VStack(spacing: 3) {
+                            Spacer()
                             
-                            Text("Durum")
-                                .foregroundColor(.gray)
-                            
-                            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                .fill(.green)
-                                .overlay(Text("Hazırlanıyor"), alignment: .center)
-                                .foregroundColor(.white)
-                                .frame(width: 100, height: 35)
-                            
-                        }
-                        
-                    }
-                    
-                }
-                .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
-                .padding()
-                
-                
-                GroupBox {
-                    
-                    HStack(spacing: 20) {
-                        
-                        Image(systemName: "doc.text")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 30, height: 30)
-                        
-                        VStack(alignment: .leading, spacing: 10) {
-                            
-                            Text("Sözleşme")
-                                .font(.title3)
-                            
-                            Text("Bursa Evim")
-                                .font(.title2)
-                            
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        Spacer()
-                        
-                        VStack(spacing: 3) {
-                            
-                            Text("Durum")
-                                .foregroundColor(.gray)
-                            
-                            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                .fill(.red)
-                                .overlay(Text("Onaylandı"), alignment: .center)
-                                .foregroundColor(.white)
-                                .frame(width: 100, height: 35)
-                            
+                            VStack(spacing: 3) {
+                                
+                                Text("Durum")
+                                    .foregroundColor(.gray)
+                                
+                                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                    .fill(.green)
+                                    .overlay(Text("Hazırlanıyor"), alignment: .center)
+                                    .foregroundColor(.white)
+                                    .frame(width: 100, height: 35)
+                                
+                            }
                             
                         }
                         
                     }
+                    .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
+                    .padding()
                     
                 }
-                .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
-                .padding()
                 
+                NavigationLink(destination: ContractDetailView()) {
+                    
+                    GroupBox {
+                        
+                        HStack(spacing: 20) {
+                            
+                            Image(systemName: "doc.text")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 30, height: 30)
+                            
+                            VStack(alignment: .leading, spacing: 10) {
+                                
+                                Text("Sözleşme")
+                                    .font(.title3)
+                                
+                                Text("Bursa Evim")
+                                    .font(.title2)
+                                
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                            Spacer()
+                            
+                            VStack(spacing: 3) {
+                                
+                                Text("Durum")
+                                    .foregroundColor(.gray)
+                                
+                                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                    .fill(.red)
+                                    .overlay(Text("Onaylandı"), alignment: .center)
+                                    .foregroundColor(.white)
+                                    .frame(width: 100, height: 35)
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
+                    .padding()
+                    
+                }
+
                 Spacer()
                 
             }
             .navigationBarHidden(true)
+            .navigationTitle("")
             
         }
-        
     }
 }

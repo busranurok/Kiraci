@@ -15,6 +15,8 @@ struct MyBuildingsView: View {
             
             VStack(spacing: -20) {
                     
+                NavigationLink(destination: BuildingDetail()) {
+                    
                     GroupBox {
                         
                         HStack(spacing: 20) {
@@ -55,53 +57,59 @@ struct MyBuildingsView: View {
                     .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
                     .padding()
                     
+                }
+                
+                NavigationLink(destination: BuildingDetail()) {
                     
-                GroupBox {
-                    
-                    HStack(spacing: 20) {
+                    GroupBox {
                         
-                        Image("home")
-                            .imageScale(.large)
-                        
-                        VStack(alignment: .leading, spacing: 10) {
+                        HStack(spacing: 20) {
                             
-                            Text("Mülk")
-                                .font(.title3)
+                            Image("home")
+                                .imageScale(.large)
                             
-                            Text("Bursa Evim")
-                                .font(.body).bold()
+                            VStack(alignment: .leading, spacing: 10) {
+                                
+                                Text("Mülk")
+                                    .font(.title3)
+                                
+                                Text("Bursa Evim")
+                                    .font(.body).bold()
+                                
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
                             
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        Spacer()
-                        
-                        VStack(spacing: 3) {
+                            Spacer()
                             
-                            Text("Durum")
-                                .foregroundColor(.gray)
-                            
-                            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                .fill(.red)
-                                .overlay(Text("Dolu"), alignment: .center)
-                                .foregroundColor(.white)
-                                .frame(width: 70, height: 30)
-                                            
+                            VStack(spacing: 3) {
+                                
+                                Text("Durum")
+                                    .foregroundColor(.gray)
+                                
+                                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                    .fill(.red)
+                                    .overlay(Text("Dolu"), alignment: .center)
+                                    .foregroundColor(.white)
+                                    .frame(width: 70, height: 30)
+                                                
+                                
+                            }
                             
                         }
                         
                     }
+                    .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
+                    .padding()
                     
                 }
-                .groupBoxStyle(ColoredGroupBox(customBackgroundColor: Color.cardViewBackground))
-                .padding()
-                    
+               
                     Spacer()
                     
                 }
-                .navigationBarHidden(true)
+
             
         }
-        
+        .navigationBarHidden(true)
+        .navigationTitle("")
     }
 }

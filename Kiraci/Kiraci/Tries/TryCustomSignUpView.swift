@@ -1,37 +1,142 @@
 //
-//  ChangePasswordView.swift
+//  SignUpView.swift
 //  Kiraci
 //
-//  Created by BusranurOK on 23.07.2022.
+//  Created by BusranurOK on 17.07.2022.
 //
 
 import SwiftUI
 
-struct ChangePasswordView: View {
+struct TryCustomSignUpView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State private var oldPassword: String = ""
-    @State private var newPassword: String = ""
-    @State private var newPasswordAgain: String = ""
+    @State private var email: String = ""
+    @State private var phone: String = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var passwordAgain: String = ""
     
     var screenSize = UIScreen.main.bounds
     
     var body: some View {
         
-            VStack(spacing: 20) {
-                
-                Text("To change your password, please fill all fields. Then press the Save button.")
-                    .padding()
-                    .background(.yellow)
-                    .foregroundColor(.white)
-                    .font(.headline)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(5)
-                    .lineSpacing(2)
+        /*VStack {
+         
+         ZStack(alignment: .top) {
+         
+         CustomSignUpShape()
+         .fill(Color.renterText)
+         .opacity(0.5)
+         .frame(height: 200.0)
+         .shadow(radius: 5)
+         .overlay(Text("Sign Up")
+         .font(.largeTitle)
+         .fontWeight(.bold))
+         .padding(.horizontal, -40)
+         
+         /*CustomSignUpShape(yOffSet: 0.25)
+          .fill(Color.blue)
+          .opacity(0.5)
+          .frame(height: 150.0)
+          .shadow(radius: 4)
+          */
+         
+         }
+         
+         Spacer()
+         
+         Text("Filled sign up")
+         
+         }
+         .edgesIgnoringSafeArea(.top)*/
+        
+        VStack(spacing: 70) {
+            
+            Image("home")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 200)
+                .clipShape(CustomSignUpShape())
+                .overlay(Text("Sign Up")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.renterText))
+                .padding(.horizontal, -40)
+            
+            VStack(spacing: 30) {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Text("Old Password")
+                    Text("Email")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("RenterText"))
+                    
+                    HStack {
+                        
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(.gray)
+                        
+                        TextField("Email", text: $email)
+                        
+                    }
+                    .padding()
+                    .frame(width: self.screenSize.width - 50, height: 40)
+                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                    .background(Color.white)
+                    .shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
+                    
+                }
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    
+                    Text("Phone")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("RenterText"))
+                    
+                    HStack {
+                        
+                        Image(systemName: "phone")
+                            .foregroundColor(.gray)
+                        
+                        TextField("Phone", text: $phone)
+                        
+                    }
+                    .padding()
+                    .frame(width: self.screenSize.width - 50, height: 40)
+                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                    .background(Color.white)
+                    .shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
+                    
+                }
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    
+                    Text("Username")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("RenterText"))
+                    
+                    HStack {
+                        
+                        Image(systemName: "person")
+                            .foregroundColor(.gray)
+                        
+                        TextField("Username", text: $username)
+                        
+                    }
+                    .padding()
+                    .frame(width: self.screenSize.width - 50, height: 40)
+                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
+                    .background(Color.white)
+                    .shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
+                    
+                }
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    
+                    Text("Password")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color("RenterText"))
@@ -41,7 +146,7 @@ struct ChangePasswordView: View {
                         Image(systemName: "lock.fill")
                             .foregroundColor(.gray)
                         
-                        SecureField("Old Password", text: $oldPassword)
+                        SecureField("Password", text: $password)
                         
                         Image(systemName: "eye.slash")
                             .foregroundColor(.gray)
@@ -57,7 +162,7 @@ struct ChangePasswordView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Text("New Password")
+                    Text("Password Again")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color("RenterText"))
@@ -67,33 +172,7 @@ struct ChangePasswordView: View {
                         Image(systemName: "lock.fill")
                             .foregroundColor(.gray)
                         
-                        SecureField("New Password", text: $newPassword)
-                        
-                        Image(systemName: "eye.slash")
-                            .foregroundColor(.gray)
-                        
-                    }
-                    .padding()
-                    .frame(width: self.screenSize.width - 50, height: 40)
-                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
-                    .background(Color.white)
-                    .shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
-                    
-                }
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    
-                    Text("New Password Again")
-                        .font(.caption)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color("RenterText"))
-                    
-                    HStack {
-                        
-                        Image(systemName: "lock.fill")
-                            .foregroundColor(.gray)
-                        
-                        SecureField("New Password Again", text: $newPasswordAgain)
+                        SecureField("Password", text: $passwordAgain)
                         
                         Image(systemName: "eye.slash")
                             .foregroundColor(.gray)
@@ -113,7 +192,7 @@ struct ChangePasswordView: View {
                     
                 }) {
                     
-                    Text("Save")
+                    Text("Sign Up")
                         .padding(.horizontal)
                         .font(.system(size: 20))
                         .frame(width: self.screenSize.width - 50, height: 40)
@@ -125,10 +204,12 @@ struct ChangePasswordView: View {
                 .shadow(color: .gray, radius: 5.0)
                 
             }
-            .padding(.top)
-            .navigationTitle("Change Password")
             
             Spacer()
+            
+        }
+        .edgesIgnoringSafeArea(.top)
         
     }
 }
+

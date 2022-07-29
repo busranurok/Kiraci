@@ -13,6 +13,7 @@ struct SignInView: View {
     @State private var password: String = ""
     @State private var showBaseView = false
     @State private var showForgetPasswordView = false
+    @State private var showLoadingScreen = false
     
     var screenSize = UIScreen.main.bounds
     
@@ -97,7 +98,13 @@ struct SignInView: View {
                             
                             Button(action: {
                                 
-                                showBaseView.toggle()
+                                showLoadingScreen.toggle()
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                    showLoadingScreen.toggle()
+                                    showBaseView.toggle()
+                                    
+                                        }
                                 
                             }) {
                                 
@@ -179,7 +186,7 @@ struct SignInView: View {
                                 showForgetPasswordView.toggle()
                                 
                             } label: {
-                            
+                                
                                 Text("Forget password?")
                                     .font(.system(size: 15))
                                     .fontWeight(.bold)
@@ -224,6 +231,28 @@ struct SignInView: View {
         }
         .accentColor(Color.renterText)
         .navigationBarHidden(true)
-        
+        .overlay(
+            
+            ZStack {
+                
+                if showLoadingScreen {
+                    
+                    Color.primary.opacity(0.2)
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            
+                            withAnimation(.spring()){showLoadingScreen.toggle()}
+                            
+                        }
+                    
+                    // Sliding From Bottom...
+                    DribbleAnimatedView(showLoadingScreen: $showLoadingScreen)
+                    //.offsΩt(y: showPopUp ? 0 : UIScreen.main.bounds.height)
+                    
+                }
+                
+            }
+            
+        )
     }
 }

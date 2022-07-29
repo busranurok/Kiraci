@@ -240,7 +240,7 @@ extension BaseView {
             if currentTab == DashboardPage.renter {
                 
                 RenterDashboardView()
-                    .navigationTitle("Dashboard")
+                    .navigationTitle("")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
                 //En üst view de isem padding veremem. Bir üst view e göre poadding verilir.
@@ -249,13 +249,12 @@ extension BaseView {
             } else {
                 
                 BuildingOwnerDashboardView()
-                    .navigationTitle("Dashboard")
+                    .navigationTitle("")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
                     .padding(.top, 80)
             }
         }
-        
     }
     
     @ViewBuilder
@@ -273,6 +272,7 @@ extension BaseView {
         MyRentedContractsView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
+        
         
     }
     
