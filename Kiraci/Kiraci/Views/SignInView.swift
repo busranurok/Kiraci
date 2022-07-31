@@ -14,6 +14,31 @@ struct SignInView: View {
     @State private var showBaseView = false
     @State private var showForgetPasswordView = false
     @State private var showLoadingScreen = false
+    @State private var isEnterText = false
+    
+    var emailBackgroundColor: Color {
+        
+        return isEnterText ? Color.white : Color.gray.opacity(0.07)
+        
+    }
+    
+    var emailTextFieldBorder: Color {
+        
+        return isEnterText ? Color.green : Color.gray
+        
+    }
+    
+    var passwordBackgroundColor: Color {
+        
+        return isEnterText ? Color.white : Color.gray.opacity(0.07)
+        
+    }
+    
+    var passwordTextFieldBorder: Color {
+        
+        return isEnterText ? Color.green : Color.gray
+        
+    }
     
     var screenSize = UIScreen.main.bounds
     
@@ -47,15 +72,15 @@ struct SignInView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("Email")
-                                .font(.caption)
+                            Text("E-mail")
+                                .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
                             
                             HStack {
                                 
                                 Image(systemName: "envelope.fill")
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(.gray.opacity(0.5))
                                 
                                 TextField("Email", text: $email)
                                 
@@ -63,22 +88,29 @@ struct SignInView: View {
                             .padding()
                             .frame(width: self.screenSize.width - 50, height: 40)
                             .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
-                            .background(Color.white)
-                            .shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
+                            .onTapGesture {
+                                
+                                isEnterText = true
+                                
+                            }
+                            .background(emailBackgroundColor)
+                            .border(emailTextFieldBorder)
+                            .cornerRadius(3)
+                            //.shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
                             
                         }
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
                             Text("Password")
-                                .font(.caption)
+                                .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
                             
                             HStack {
                                 
                                 Image(systemName: "lock.fill")
-                                    .foregroundColor(.gray)
+                                    .foregroundColor(.gray.opacity(0.5))
                                 
                                 SecureField("Password", text: $password)
                                 
@@ -89,8 +121,15 @@ struct SignInView: View {
                             .padding()
                             .frame(width: self.screenSize.width - 50, height: 40)
                             .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray, lineWidth: 1))
-                            .background(Color.white)
-                            .shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
+                            .onTapGesture {
+                                
+                                isEnterText = true
+                                
+                            }
+                            .background(passwordBackgroundColor)
+                            .border(passwordTextFieldBorder)
+                            .cornerRadius(3)
+                            //.shadow(color: .black.opacity(0.1), radius: 3, x: 0, y: 1)
                             
                         }
                         
@@ -104,7 +143,7 @@ struct SignInView: View {
                                     showLoadingScreen.toggle()
                                     showBaseView.toggle()
                                     
-                                        }
+                                }
                                 
                             }) {
                                 
@@ -219,6 +258,7 @@ struct SignInView: View {
                             }
                         }
                         .frame(minWidth: 50, maxWidth: .infinity, minHeight: 10, maxHeight: 20)
+                        .navigationTitle("")
                         
                     }
                     .ignoresSafeArea()
