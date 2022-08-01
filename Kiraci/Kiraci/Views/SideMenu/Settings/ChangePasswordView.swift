@@ -20,12 +20,13 @@ struct ChangePasswordView: View {
         
             VStack(spacing: 20) {
                 
-                Text("Şifrenizi değiştirmek için lütfen tüm alanları doldurun.Ardından Kaydet butonuna basın.")
+                Text("Şifrenizi değiştirmek için lütfen aşağıdaki alanı doldurun.Ardından Şifreyi Güncelle butonuna basın.")
                     .padding()
+                    .frame(width: self.screenSize.width - 50)
                     .background(.yellow)
                     .foregroundColor(.white)
                     .font(.headline)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
                     .lineLimit(5)
                     .lineSpacing(2)
                 
