@@ -73,7 +73,7 @@ struct ForgotPasswordView: View {
             .foregroundColor(Color.white)
             .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.red.opacity(0.6)]), startPoint: .leading, endPoint: .trailing))
             .cornerRadius(10)
-            .shadow(color: Color.red, radius: 7)
+            .shadow(color: Color.red, radius: 3)
             
             Spacer()
             

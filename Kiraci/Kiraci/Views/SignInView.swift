@@ -243,7 +243,7 @@ struct SignInView: View {
                             }
                         }
                         
-                        NavigationLink(destination: ForgetPasswordView(), isActive: $showForgetPasswordView) {
+                        NavigationLink(destination: ForgotPasswordView(), isActive: $showForgetPasswordView) {
                             
                             Button {
                                 
