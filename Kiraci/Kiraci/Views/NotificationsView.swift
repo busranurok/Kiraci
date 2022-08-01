@@ -9,6 +9,12 @@ import SwiftUI
 
 struct NotificationsView: View {
     
+    init() {
+        
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.init(Color.renterText)]
+        
+    }
+    
     var body: some View {
         
         ScrollView {
@@ -80,6 +86,7 @@ struct NotificationsView: View {
                     
                 }
                 .navigationTitle("Bildirimler")
+           
             }
         }
     }

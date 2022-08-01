@@ -17,6 +17,12 @@ struct ContractDetailView: View {
     @State private var guarantorsDisclosureExpanded = false
     @State private var termsDisclosureExpanded = false
     
+    init() {
+        
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.init(Color.renterText)]
+        
+    }
+    
     var body: some View {
         
         VStack {

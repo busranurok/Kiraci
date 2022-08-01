@@ -14,6 +14,12 @@ struct BuildingDetail: View {
     
     private let adaptiveColumns = [GridItem(.adaptive(minimum: 150))]
     
+    init() {
+        
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.init(Color.renterText)]
+        
+    }
+    
     var body: some View {
         
         VStack {
@@ -199,6 +205,7 @@ struct BuildingDetail: View {
             
         }
         .navigationTitle("Mülk Detayı")
+ 
     }
     
     @ViewBuilder

@@ -10,6 +10,12 @@ import SwiftUI
 struct ChangeLanguageView: View {
     
     @State var selectedLanguage: Language = Language.english
+    
+    init() {
+        
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.init(Color.renterText)]
+        
+    }
        
     var body: some View {
         
@@ -62,5 +68,6 @@ struct ChangeLanguageView: View {
             
         }
         .navigationTitle("Dil Değişikliği")
+    
     }
 }

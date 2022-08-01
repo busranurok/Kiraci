@@ -22,6 +22,12 @@ struct ChangePasswordView: View {
     
     var screenSize = UIScreen.main.bounds
     
+    init() {
+        
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.init(Color.renterText)]
+        
+    }
+    
     var body: some View {
         
             VStack(spacing: 20) {
