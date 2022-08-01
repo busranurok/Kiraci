@@ -63,7 +63,7 @@ struct ContractCardView: View {
                                         } icon : {
                                             
                                             Image(systemName: "calendar")
-                                                .foregroundColor(.green.opacity(0.8))
+                                                .foregroundColor(Color.renterText)
                                             
                                         }
                                         .font(.system(size: 15, weight: .bold))
@@ -138,7 +138,7 @@ struct ContractCardView: View {
                                         } icon : {
                                             
                                             Image(systemName: "calendar")
-                                                .foregroundColor(.green.opacity(0.8))
+                                                .foregroundColor(Color.renterText)
                                             
                                         }
                                         .font(.system(size: 15, weight: .bold))

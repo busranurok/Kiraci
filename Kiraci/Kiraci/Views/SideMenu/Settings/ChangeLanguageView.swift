@@ -46,11 +46,11 @@ struct ChangeLanguageView: View {
                             
                             ZStack {
                                 
-                                Circle().fill(self.selectedLanguage == language ? Color.green : Color.black.opacity(0.2)).frame(width: 18, height: 18)
+                                Circle().fill(self.selectedLanguage == language ? Color.renterText : Color.black.opacity(0.2)).frame(width: 18, height: 18)
                                 
                                 if self.selectedLanguage == language {
                                     
-                                    Circle().stroke(Color.green.opacity(0.5), lineWidth: 4)
+                                    Circle().stroke(Color.renterText, lineWidth: 4)
                                         .frame(width: 25, height: 25)
                                     
                                 }

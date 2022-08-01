@@ -40,7 +40,7 @@ struct ContractDetailView: View {
                         Label("Sözleşme Bilgileri", systemImage: "doc.text")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -55,7 +55,7 @@ struct ContractDetailView: View {
                         Label("Ücretler", systemImage: "banknote")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -70,7 +70,7 @@ struct ContractDetailView: View {
                         Label("Mülk", systemImage: "building")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -85,7 +85,7 @@ struct ContractDetailView: View {
                         Label("Kiraya Veren Yetkili", systemImage: "person")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -100,7 +100,7 @@ struct ContractDetailView: View {
                         Label("Ödeme Planı", systemImage: "doc.text")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -115,7 +115,7 @@ struct ContractDetailView: View {
                         Label("Koşullar", systemImage: "doc.text")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -130,7 +130,7 @@ struct ContractDetailView: View {
                         Label("Kefiller", systemImage: "person")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 

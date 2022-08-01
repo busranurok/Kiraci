@@ -28,7 +28,7 @@ struct TryProfileView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 100, height: 100)
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.green, lineWidth: 3))
+                        .overlay(Circle().stroke(Color.renterText, lineWidth: 3))
                         .padding(.top, 6)
                         .padding(.bottom, 4)
                         .padding(.horizontal, 8)

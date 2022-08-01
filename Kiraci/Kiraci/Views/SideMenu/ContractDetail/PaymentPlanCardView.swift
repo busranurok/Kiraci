@@ -32,7 +32,7 @@ struct PaymentPlanCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "calendar")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))
@@ -59,7 +59,7 @@ struct PaymentPlanCardView: View {
                                 } icon : {
                                     
                                     Image(systemName: "banknote")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))
@@ -100,7 +100,7 @@ struct PaymentPlanCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "calendar")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))
@@ -127,7 +127,7 @@ struct PaymentPlanCardView: View {
                                 } icon : {
                                     
                                     Image(systemName: "banknote")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))

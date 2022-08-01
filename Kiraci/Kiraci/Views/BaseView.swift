@@ -223,7 +223,7 @@ struct BaseView: View {
                 Text(title)
                 
             }
-            .foregroundColor(currentTab == page ? .green : .gray)
+            .foregroundColor(currentTab == page ? Color.renterText : .gray)
             .frame(maxWidth: .infinity)
         }
     }

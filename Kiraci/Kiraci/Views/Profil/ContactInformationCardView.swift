@@ -29,7 +29,7 @@ struct ContactInformationCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "phone")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))
@@ -64,7 +64,7 @@ struct ContactInformationCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "tv.and.mediabox")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))
@@ -99,7 +99,7 @@ struct ContactInformationCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "envelope")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))

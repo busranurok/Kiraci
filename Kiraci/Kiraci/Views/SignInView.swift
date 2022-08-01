@@ -26,7 +26,7 @@ struct SignInView: View {
     
     var emailTextFieldBorder: Color {
         
-        return isEnterText ? Color.green : Color.gray
+        return isEnterText ? Color.renterText : Color.gray
         
     }
     
@@ -38,7 +38,7 @@ struct SignInView: View {
     
     var passwordTextFieldBorder: Color {
         
-        return isEnterText ? Color.green : Color.gray
+        return isEnterText ? Color.renterText : Color.gray
         
     }
     

@@ -72,6 +72,7 @@ struct NotificationsView: View {
                             } icon : {
                                 
                                 Image(systemName: "calendar")
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))

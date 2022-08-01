@@ -59,7 +59,7 @@ struct BuildingDetail: View {
                     HStack {
                         
                         Image(systemName: "house")
-                            .foregroundColor(.green)
+                            .foregroundColor(Color.renterText)
                         Text("Mülk Adı")
                             .foregroundColor(.black)
                         
@@ -79,7 +79,7 @@ struct BuildingDetail: View {
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 50, height: 50)
                                 .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.green, lineWidth: 3))
+                                .overlay(Circle().stroke(Color.renterText, lineWidth: 3))
                                 .padding(.top, 6)
                                 .padding(.bottom, 4)
                                 .padding(.horizontal, 8)
@@ -106,7 +106,8 @@ struct BuildingDetail: View {
                     HStack {
                         
                         Image(systemName: "person")
-                            .foregroundColor(.green)
+                            .foregroundColor(Color.renterText)
+                        
                         Text("Mülk Sahibi")
                             .foregroundColor(.black)
                         
@@ -133,7 +134,8 @@ struct BuildingDetail: View {
                     HStack {
                         
                         Image(systemName: "building")
-                            .foregroundColor(.green)
+                            .foregroundColor(Color.renterText)
+                        
                         Text("Yönetici Şirket")
                             .foregroundColor(.black)
                         
@@ -160,7 +162,8 @@ struct BuildingDetail: View {
                     HStack {
                         
                         Image(systemName: "building")
-                            .foregroundColor(.green)
+                            .foregroundColor(Color.renterText)
+                        
                         Text("Emlakçı")
                             .foregroundColor(.black)
                         
@@ -180,7 +183,7 @@ struct BuildingDetail: View {
                         Label("Detaylar", systemImage: "doc.text.magnifyingglass")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -195,7 +198,7 @@ struct BuildingDetail: View {
                         Label("Sözleşmeler", systemImage: "doc.text")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 

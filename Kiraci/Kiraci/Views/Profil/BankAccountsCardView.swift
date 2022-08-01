@@ -30,7 +30,7 @@ struct BankAccountsCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "building.columns")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))
@@ -65,7 +65,7 @@ struct BankAccountsCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "building.columns")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))
@@ -100,7 +100,7 @@ struct BankAccountsCardView: View {
                             } icon : {
                                 
                                 Image(systemName: "envelope")
-                                    .foregroundColor(.green.opacity(0.8))
+                                    .foregroundColor(Color.renterText)
                                 
                             }
                             .font(.system(size: 15, weight: .bold))

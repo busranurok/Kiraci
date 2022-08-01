@@ -29,7 +29,7 @@ struct ProfileView: View {
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 90, height: 90)
                                 .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.green, lineWidth: 3))
+                                .overlay(Circle().stroke(Color.renterText, lineWidth: 3))
                                 .padding(.top, 6)
                                 .padding(.bottom, 4)
                                 .padding(.horizontal, 8)
@@ -53,7 +53,7 @@ struct ProfileView: View {
                                 } icon : {
                                     
                                     Image(systemName: "person")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))
@@ -77,7 +77,7 @@ struct ProfileView: View {
                                 } icon : {
                                     
                                     Image(systemName: "envelope")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))
@@ -100,7 +100,7 @@ struct ProfileView: View {
                                 } icon : {
                                     
                                     Image(systemName: "phone")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))
@@ -123,7 +123,7 @@ struct ProfileView: View {
                                 } icon : {
                                     
                                     Image(systemName: "creditcard")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))
@@ -146,7 +146,7 @@ struct ProfileView: View {
                                 } icon : {
                                     
                                     Image(systemName: "building")
-                                        .foregroundColor(.green.opacity(0.8))
+                                        .foregroundColor(Color.renterText)
                                     
                                 }
                                 .font(.system(size: 15, weight: .bold))
@@ -181,7 +181,7 @@ struct ProfileView: View {
                         Label("İletişim Bilgileri", systemImage: "laptopcomputer.and.iphone")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
                 
@@ -196,7 +196,7 @@ struct ProfileView: View {
                         Label("Banka Hesapları", systemImage: "banknote")
                         
                     }
-                    .accentColor(.green)
+                    .accentColor(Color.renterText)
                     
                 }
             }
