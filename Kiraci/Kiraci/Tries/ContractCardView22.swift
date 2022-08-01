@@ -1,13 +1,13 @@
 //
-//  ContractCardView2.swift
+//  ContractCardView.swift
 //  Kiraci
 //
-//  Created by BusranurOK on 1.08.2022.
+//  Created by BusranurOK on 29.07.2022.
 //
 
 import SwiftUI
 
-struct ContractCardView: View {
+struct ContractCardView22: View {
     
     @State private var showContractDetailView = false
     
@@ -31,43 +31,28 @@ struct ContractCardView: View {
                                 
                                 VStack(alignment: .leading, spacing: 10) {
                                     
-                                    VStack(alignment: .leading, spacing: 3) {
-                                        
-                                        Text("Sözleşme No")
-                                            .bold()
-                                        
-                                        Text("123456")
-                                            .lineLimit(5)
-                                            .foregroundColor(.black.opacity(0.6))
-                                        
-                                    }
+                                    Text("Sözleşme No: 123456")
+                                        .font(.subheadline)
                                     
-                                    VStack(alignment: .leading, spacing: 3) {
-                                        
-                                        Text("Mülk Adı")
-                                            .bold()
-                                        
-                                        Text("Pendik Evim")
-                                            .lineLimit(5)
-                                            .foregroundColor(.black.opacity(0.6))
-                                        
-                                    }
+                                    Text("Pendik Evim")
+                                        .multilineTextAlignment(.leading)
+                                        .lineLimit(3)
+                                        .font(.subheadline)
                                     
                                     HStack {
                                         
                                         Label {
                                             
-                                            Text("01.08.2022")
+                                            Text("28.09.1993")
                                                 .font(.subheadline)
                                             
                                         } icon : {
                                             
                                             Image(systemName: "calendar")
-                                                .foregroundColor(.green.opacity(0.8))
                                             
                                         }
                                         .font(.system(size: 15, weight: .bold))
-                                        .foregroundColor(.black.opacity(0.8))
+                                        .foregroundColor(.black.opacity(0.5))
                                         
                                         Spacer()
                                         
@@ -106,43 +91,28 @@ struct ContractCardView: View {
                                 
                                 VStack(alignment: .leading, spacing: 10) {
                                     
-                                    VStack(alignment: .leading, spacing: 3) {
-                                        
-                                        Text("Sözleşme No")
-                                            .bold()
-                                        
-                                        Text("123456")
-                                            .lineLimit(5)
-                                            .foregroundColor(.black.opacity(0.6))
-                                        
-                                    }
+                                    Text("Sözleşme No: 123456")
+                                        .font(.subheadline)
                                     
-                                    VStack(alignment: .leading, spacing: 3) {
-                                        
-                                        Text("Mülk Adı")
-                                            .bold()
-                                        
-                                        Text("Pendik Evim")
-                                            .lineLimit(5)
-                                            .foregroundColor(.black.opacity(0.6))
-                                        
-                                    }
+                                    Text("Pendik Evim")
+                                        .multilineTextAlignment(.leading)
+                                        .lineLimit(3)
+                                        .font(.subheadline)
                                     
                                     HStack {
                                         
                                         Label {
                                             
-                                            Text("01.08.2022")
+                                            Text("28.09.1993")
                                                 .font(.subheadline)
                                             
                                         } icon : {
                                             
                                             Image(systemName: "calendar")
-                                                .foregroundColor(.green.opacity(0.8))
                                             
                                         }
                                         .font(.system(size: 15, weight: .bold))
-                                        .foregroundColor(.black.opacity(0.8))
+                                        .foregroundColor(.black.opacity(0.5))
                                         
                                         Spacer()
                                         
@@ -172,6 +142,8 @@ struct ContractCardView: View {
             }
             .padding()
         }
-        
     }
 }
+
+
+

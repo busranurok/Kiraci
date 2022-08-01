@@ -20,7 +20,7 @@ struct ChangePasswordView: View {
         
             VStack(spacing: 20) {
                 
-                Text("To change your password, please fill all fields. Then press the Save button.")
+                Text("Şifrenizi değiştirmek için lütfen tüm alanları doldurun.Ardından Kaydet butonuna basın.")
                     .padding()
                     .background(.yellow)
                     .foregroundColor(.white)
@@ -31,7 +31,7 @@ struct ChangePasswordView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Text("Old Password")
+                    Text("Eski Şifre")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color("RenterText"))
@@ -41,7 +41,7 @@ struct ChangePasswordView: View {
                         Image(systemName: "lock.fill")
                             .foregroundColor(.gray)
                         
-                        SecureField("Old Password", text: $oldPassword)
+                        SecureField("Eski Şifre", text: $oldPassword)
                         
                         Image(systemName: "eye.slash")
                             .foregroundColor(.gray)
@@ -57,7 +57,7 @@ struct ChangePasswordView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Text("New Password")
+                    Text("Yeni Şifre")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color("RenterText"))
@@ -67,7 +67,7 @@ struct ChangePasswordView: View {
                         Image(systemName: "lock.fill")
                             .foregroundColor(.gray)
                         
-                        SecureField("New Password", text: $newPassword)
+                        SecureField("Yeni Şifre", text: $newPassword)
                         
                         Image(systemName: "eye.slash")
                             .foregroundColor(.gray)
@@ -83,7 +83,7 @@ struct ChangePasswordView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Text("New Password Again")
+                    Text("Yeni Şifre Tekrar")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color("RenterText"))
@@ -93,7 +93,7 @@ struct ChangePasswordView: View {
                         Image(systemName: "lock.fill")
                             .foregroundColor(.gray)
                         
-                        SecureField("New Password Again", text: $newPasswordAgain)
+                        SecureField("Yeni Şifre Tekrar", text: $newPasswordAgain)
                         
                         Image(systemName: "eye.slash")
                             .foregroundColor(.gray)
@@ -113,7 +113,7 @@ struct ChangePasswordView: View {
                     
                 }) {
                     
-                    Text("Save")
+                    Text("Kaydet")
                         .padding(.horizontal)
                         .font(.system(size: 20))
                         .frame(width: self.screenSize.width - 50, height: 40)
@@ -126,7 +126,7 @@ struct ChangePasswordView: View {
                 
             }
             .padding(.top)
-            .navigationTitle("Change Password")
+            .navigationTitle("Şifre Değişikliği")
             
             Spacer()
         

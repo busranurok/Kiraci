@@ -16,6 +16,10 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var passwordAgain: String = ""
     @State private var showLoadingScreen = false
+    @State private var showPassword = false
+    @State private var showPasswordAgain = false
+    @State private var passwordImageName = "eye.slash"
+    @State private var passwordAgainImageName = "eye.slash"
     
     var screenSize = UIScreen.main.bounds
     
@@ -24,7 +28,7 @@ struct SignUpView: View {
         VStack {
             
             // Welcome Back text for 6 half of the screen
-            Text("Sign up")
+            Text("Kayıt Ol")
                 .font(.largeTitle).bold()
                 .tracking(3)
                 .padding(.leading, -190)
@@ -48,7 +52,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("E-mail")
+                            Text("E-posta")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -58,7 +62,7 @@ struct SignUpView: View {
                                 Image(systemName: "envelope.fill")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                TextField("Email", text: $email)
+                                TextField("E-posta", text: $email)
                                 
                             }
                             .padding()
@@ -71,7 +75,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("Phone")
+                            Text("Telefon")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -81,7 +85,7 @@ struct SignUpView: View {
                                 Image(systemName: "phone")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                TextField("Phone", text: $phone)
+                                TextField("Telefon", text: $phone)
                                 
                             }
                             .padding()
@@ -94,7 +98,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("Username")
+                            Text("Adınız")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -104,7 +108,7 @@ struct SignUpView: View {
                                 Image(systemName: "person")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                TextField("Username", text: $username)
+                                TextField("Adınız", text: $username)
                                 
                             }
                             .padding()
@@ -117,7 +121,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("Password")
+                            Text("Şifre")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -127,10 +131,33 @@ struct SignUpView: View {
                                 Image(systemName: "lock.fill")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                SecureField("Password", text: $password)
+                                if showPassword {
+                                    
+                                    TextField("Şifre", text: $password)
+                                    
+                                }else {
+                                    
+                                    SecureField("Şifre", text: $password)
+                                    
+                                }
                                 
-                                Image(systemName: "eye.slash")
+                                Image(systemName: passwordImageName)
                                     .foregroundColor(.gray.opacity(0.5))
+                                    .onTapGesture {
+                                        
+                                        showPassword.toggle()
+                                        
+                                        if passwordImageName == "eye.slash" {
+                                            
+                                            passwordImageName = "eye"
+                                            
+                                        }else {
+                                            
+                                            passwordImageName = "eye.slash"
+                                            
+                                        }
+                                        
+                                    }
                                 
                             }
                             .padding()
@@ -143,7 +170,7 @@ struct SignUpView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("Password Again")
+                            Text("Şifre Tekrar")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -153,10 +180,33 @@ struct SignUpView: View {
                                 Image(systemName: "lock.fill")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                SecureField("Password", text: $passwordAgain)
+                                if showPassword {
+                                    
+                                    TextField("Şifre Tekrar", text: $passwordAgain)
+                                    
+                                }else {
+                                    
+                                    SecureField("Şifre Tekrar", text: $passwordAgain)
+                                    
+                                }
                                 
-                                Image(systemName: "eye.slash")
+                                Image(systemName: passwordAgainImageName)
                                     .foregroundColor(.gray.opacity(0.5))
+                                    .onTapGesture {
+                                        
+                                        showPasswordAgain.toggle()
+                                        
+                                        if passwordAgainImageName == "eye.slash" {
+                                            
+                                            passwordAgainImageName = "eye"
+                                            
+                                        }else {
+                                            
+                                            passwordAgainImageName = "eye.slash"
+                                            
+                                        }
+                                        
+                                    }
                                 
                             }
                             .padding()
@@ -179,7 +229,7 @@ struct SignUpView: View {
                             
                         }) {
                             
-                            Text("Sign Up")
+                            Text("Kayıt Ol")
                                 .padding(.horizontal)
                                 .font(.system(size: 20).bold())
                                 .frame(width: self.screenSize.width - 50, height: 50)

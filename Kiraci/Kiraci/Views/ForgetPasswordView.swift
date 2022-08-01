@@ -20,7 +20,7 @@ struct ForgetPasswordView: View {
     
         VStack(spacing: 20) {
             
-            Text("To change your password, please fill all fields. Then press the Save button.")
+            Text("Şifrenizi değiştirmek için lütfen tüm alanları doldurunuz. Ardından Kaydet düğmesine basın.")
                 .padding()
                 .background(.yellow)
                 .foregroundColor(.white)
@@ -33,7 +33,7 @@ struct ForgetPasswordView: View {
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    Text("Email")
+                    Text("E-posta")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(Color("RenterText"))
@@ -43,7 +43,7 @@ struct ForgetPasswordView: View {
                         Image(systemName: "envelope.fill")
                             .foregroundColor(.gray)
                         
-                        TextField("Email", text: $email)
+                        TextField("E*posta", text: $email)
                         
                     }
                     .padding()
@@ -68,7 +68,7 @@ struct ForgetPasswordView: View {
                         
                     }) {
                         
-                        Text("Reset Password")
+                        Text("Şifreyi Güncelle")
                             .padding(.horizontal)
                             .font(.system(size: 20))
                             .frame(width: self.screenSize.width - 50, height: 40)

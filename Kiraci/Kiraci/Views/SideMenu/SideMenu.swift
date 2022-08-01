@@ -106,7 +106,7 @@ struct SideMenu: View {
                                 .frame(width: 30, height: 30)
                                 .clipShape(Circle())
                             
-                            Text("Sign Out")
+                            Text("Çıkış")
                             
                         }
                         

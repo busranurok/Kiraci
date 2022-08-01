@@ -9,8 +9,8 @@ import SwiftUI
 
 struct BuildingDetail: View {
     
-    @State private var disclosureExpanded = false
-    @State private var disclosureExpanded2 = false
+    @State private var detailsDisclosureExpanded = false
+    @State private var contractsDisclosureExpanded = false
     
     private let adaptiveColumns = [GridItem(.adaptive(minimum: 150))]
     
@@ -165,7 +165,7 @@ struct BuildingDetail: View {
 
                 Section {
                     
-                    DisclosureGroup(isExpanded: $disclosureExpanded) {
+                    DisclosureGroup(isExpanded: $detailsDisclosureExpanded) {
                         
                         FormDetailView()
                         
@@ -180,7 +180,7 @@ struct BuildingDetail: View {
                 
                 Section {
                     
-                    DisclosureGroup(isExpanded: $disclosureExpanded2) {
+                    DisclosureGroup(isExpanded: $contractsDisclosureExpanded) {
                         
                         ContractCardView()
                         
@@ -198,7 +198,7 @@ struct BuildingDetail: View {
             Spacer(minLength: 0)
             
         }
-        .navigationTitle("Building Detail")
+        .navigationTitle("Mülk Detayı")
     }
     
     @ViewBuilder
@@ -235,6 +235,9 @@ struct BuildingDetail: View {
                 }
                 
             }
+            .padding()
+            
+            Spacer(minLength: 0)
             
         }
         

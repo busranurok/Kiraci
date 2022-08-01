@@ -61,6 +61,6 @@ struct ChangeLanguageView: View {
             .listStyle(.plain)
             
         }
-        .navigationTitle("Change Language")
+        .navigationTitle("Dil Değişikliği")
     }
 }

@@ -309,8 +309,6 @@ extension BaseView {
     @ViewBuilder
     func VBProfileView() -> some View {
         
-        Spacer()
-        
         ProfileView()
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)

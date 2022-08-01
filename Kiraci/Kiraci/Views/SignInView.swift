@@ -15,6 +15,8 @@ struct SignInView: View {
     @State private var showForgetPasswordView = false
     @State private var showLoadingScreen = false
     @State private var isEnterText = false
+    @State private var showPassword = false
+    @State private var passwordImageName = "eye.slash"
     
     var emailBackgroundColor: Color {
         
@@ -72,7 +74,7 @@ struct SignInView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("E-mail")
+                            Text("E-posta")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -82,7 +84,7 @@ struct SignInView: View {
                                 Image(systemName: "envelope.fill")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                TextField("Email", text: $email)
+                                TextField("E-posta", text: $email)
                                 
                             }
                             .padding()
@@ -102,7 +104,7 @@ struct SignInView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text("Password")
+                            Text("Şifre")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color("RenterText"))
@@ -112,10 +114,33 @@ struct SignInView: View {
                                 Image(systemName: "lock.fill")
                                     .foregroundColor(.gray.opacity(0.5))
                                 
-                                SecureField("Password", text: $password)
-                                
-                                Image(systemName: "eye.slash")
-                                    .foregroundColor(.gray)
+                                if showPassword {
+                                    
+                                    TextField("Şifre", text: $password)
+                                    
+                                }else {
+                                    
+                                    SecureField("Şifre", text: $password)
+                                    
+                                }
+                               
+                                Image(systemName: passwordImageName)
+                                    .foregroundColor(.gray.opacity(0.5))
+                                    .onTapGesture {
+                                        
+                                        showPassword.toggle()
+                                        
+                                        if passwordImageName == "eye.slash" {
+                                            
+                                            passwordImageName = "eye"
+                                            
+                                        }else {
+                                            
+                                            passwordImageName = "eye.slash"
+                                            
+                                        }
+                                        
+                                    }
                                 
                             }
                             .padding()
@@ -147,7 +172,7 @@ struct SignInView: View {
                                 
                             }) {
                                 
-                                Text("Login")
+                                Text("Giriş")
                                     .padding(.horizontal)
                                     .font(.system(size: 20))
                                     .frame(width: self.screenSize.width - 50, height: 40)
@@ -176,7 +201,7 @@ struct SignInView: View {
                                         Image(systemName: "bookmark.fill")
                                             .renderingMode(.original)
                                         
-                                        Text("Login with Microsoft")
+                                        Text("Microsoft ile Giriş")
                                             .padding(.horizontal)
                                         
                                     }
@@ -203,7 +228,7 @@ struct SignInView: View {
                                         Image(systemName: "bookmark.fill")
                                             .renderingMode(.original)
                                         
-                                        Text("Login with Google")
+                                        Text("Google ile Giriş")
                                             .padding(.horizontal)
                                         
                                         
@@ -226,7 +251,7 @@ struct SignInView: View {
                                 
                             } label: {
                                 
-                                Text("Forget password?")
+                                Text("Şifremi Unuttum?")
                                     .font(.system(size: 15))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.gray.opacity(0.5))
@@ -243,7 +268,7 @@ struct SignInView: View {
                         Color.gray.opacity(0.5)
                         
                         HStack(alignment: .center) {
-                            Text ("Don't have an account yet?")
+                            Text ("Henüz bir hesabın yok mu?")
                                 .foregroundColor(.black)
                             
                             NavigationLink {
@@ -252,7 +277,7 @@ struct SignInView: View {
                                 
                             } label: {
                                 
-                                Text("Become a member")
+                                Text("Üye Ol")
                                     .foregroundColor(Color("RenterText"))
                                 
                             }

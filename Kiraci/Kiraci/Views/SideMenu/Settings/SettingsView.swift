@@ -21,7 +21,7 @@ struct SettingsView: View {
                     
                 } label: {
                     
-                    Text("Change Password")
+                    Text("Şifre Değişikliği")
                     
                 }
                 
@@ -31,7 +31,7 @@ struct SettingsView: View {
                     
                 } label: {
                     
-                    Text("Change Language")
+                    Text("Dil Değişikliği")
                     
                 }
                

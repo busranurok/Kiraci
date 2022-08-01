@@ -79,7 +79,7 @@ struct NotificationsView: View {
                     .padding(.top, 8)
                     
                 }
-                .navigationTitle("Notifications")
+                .navigationTitle("Bildirimler")
             }
         }
     }

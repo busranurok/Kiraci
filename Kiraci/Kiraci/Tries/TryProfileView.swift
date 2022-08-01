@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileView: View {
+struct TryProfileView: View {
     
     @State var index = 0
     
