@@ -25,6 +25,7 @@
 		1FA6B03D2888BE2300921C76 /* MyBuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */; };
 		1FA6B03F2888BE6500921C76 /* MyBuildingsContractsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */; };
 		1FA6B0452888BF0C00921C76 /* CustomSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */; };
+		1FB653582899B18900466151 /* CustomPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB653572899B18900466151 /* CustomPopUpView.swift */; };
 		1FBD5CF72897BB5600EF0D6E /* ContractInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD5CF62897BB5600EF0D6E /* ContractInformationView.swift */; };
 		1FBD5CF92897BBD700EF0D6E /* PricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD5CF82897BBD700EF0D6E /* PricesView.swift */; };
 		1FBD5CFB2897BDC500EF0D6E /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD5CFA2897BDC500EF0D6E /* BuildingView.swift */; };
@@ -100,6 +101,7 @@
 		1FA6B03C2888BE2300921C76 /* MyBuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsView.swift; sourceTree = "<group>"; };
 		1FA6B03E2888BE6500921C76 /* MyBuildingsContractsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBuildingsContractsView.swift; sourceTree = "<group>"; };
 		1FA6B0442888BF0C00921C76 /* CustomSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingsView.swift; sourceTree = "<group>"; };
+		1FB653572899B18900466151 /* CustomPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpView.swift; sourceTree = "<group>"; };
 		1FBD5CF62897BB5600EF0D6E /* ContractInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractInformationView.swift; sourceTree = "<group>"; };
 		1FBD5CF82897BBD700EF0D6E /* PricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesView.swift; sourceTree = "<group>"; };
 		1FBD5CFA2897BDC500EF0D6E /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				1F10CA0228969F5F0020A678 /* CustomCorners.swift */,
 				1FC37F77289442D200D592B7 /* CustomLoadingAnimationView.swift */,
+				1FB653572899B18900466151 /* CustomPopUpView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				1FE2390A288452B000D91B1E /* ColorExtensions.swift in Sources */,
 				1FBD5CFF2897C3F500EF0D6E /* LessorOfficerView.swift in Sources */,
 				1FE8CE95288C35C600B8D0C8 /* ChangeLanguageView.swift in Sources */,
+				1FB653582899B18900466151 /* CustomPopUpView.swift in Sources */,
 				1F747A7528982813006543F6 /* BankAccountsCardView.swift in Sources */,
 				1FBD5CFB2897BDC500EF0D6E /* BuildingView.swift in Sources */,
 				1FC37F732893C25800D592B7 /* ContractDetailView.swift in Sources */,
